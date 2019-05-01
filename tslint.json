@@ -1,0 +1,10 @@
+{
+  "rulesDirectory":[],
+  "extends":[],
+  "rules":{
+    "jsx-no-lambda":false,
+    "object-literal-sort-keys":false,
+    "ordered-imports":false
+
+  }
+}
