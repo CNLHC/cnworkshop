@@ -2,8 +2,9 @@
 layout: post
 title: Vim文件类型检测
 codeName: vim-filtetype-detect
-author: Ghost
+author: CNLHC
 date: 2017-02-30T07:03:47.149Z
+tags: ["Editor", "Vim" ]
 ---
 
 文件类型检测是实现语法高亮，语义补全以及其他一系列功能的基础。本文将简单讨论`vim`是如何得到一个文件的类型并加载相关插件的。
