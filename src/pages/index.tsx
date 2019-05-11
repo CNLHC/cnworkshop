@@ -15,7 +15,8 @@ const IndexPage = ({data}) => {
     id:e.node.id,
     excerpt:e.node.excerpt,
     title:e.node.frontmatter.title,
-    url:generateURL(e.node.fileAbsolutePath,e.node.frontmatter.codeName)
+    url:generateURL(e.node.fileAbsolutePath,e.node.frontmatter.codeName),
+    tags:e.node.frontmatter.tags
   }))
 
   return (
@@ -36,6 +37,7 @@ export const query=graphql`
           frontmatter {
             title
             codeName
+            tags
           }
         }
       }
