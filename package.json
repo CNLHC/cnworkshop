@@ -14,7 +14,9 @@
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-plugin-slug": "^1.0.1",
     "gatsby-plugin-typescript": "^2.0.13",
+    "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-remark-katex": "^3.0.4",
     "gatsby-remark-mathjax": "^1.0.0",
     "gatsby-remark-prismjs": "^3.2.9",
@@ -30,6 +32,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "source-map-support": "^0.5.12",
+    "stylelint": "^10.0.1",
     "ts-node": "^8.1.0",
     "tslint": "^5.16.0",
     "typescript": "^3.4.5"

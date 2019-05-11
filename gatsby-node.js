@@ -12,6 +12,9 @@ exports.createPages = ({ graphql, actions }) => {
               edges {
                 node {
                   fileAbsolutePath
+                  fields{
+                    slug
+                  }
                   frontmatter {
                     codeName
                   }
@@ -30,7 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
           const absPath = node.fileAbsolutePath
           categoryPrefix=path.dirname(path.relative(__dirname,absPath))
           createPage({
-            path:categoryPrefix+`/${codeName}`,
+            path:node.fields.slug,
             component:__dirname+`/src/templates/blogPostTemplate.tsx`,
             context: {
               codeName

@@ -22,6 +22,9 @@ module.exports = {
         pedantic: true,
         gfm: true,
         plugins: [
+          `gatsby-plugin-slug`,
+
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-katex`,
             options: {
@@ -48,7 +51,6 @@ module.exports = {
               maxWidth: 590,
             },
           },
-
         ],
       },
     },
