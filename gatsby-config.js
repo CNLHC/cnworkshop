@@ -5,6 +5,7 @@ module.exports = {
     author: `CNLHC`,
   },
   plugins: [
+    "gatsby-plugin-scss-typescript",
     {
       resolve: `gatsby-plugin-material-ui`,
       // If you want to use styled components, in conjunction to Material-UI, you should:

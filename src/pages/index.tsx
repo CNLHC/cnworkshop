@@ -6,17 +6,19 @@ import Seo from "../components/seo"
 import PrimarySearchAppBar from "../components/HeadBar";
 import PostList from "../components/PostList"
 import { generateURL } from "../common/category"
+import { IPostMeta } from "../Typings/Post"
 
 const IndexPage = ({data}) => {
 
   console.log(data)
 
-  const postMetaList:any = data.allMarkdownRemark.edges.map(e=>({
+  const postMetaList:IPostMeta= data.allMarkdownRemark.edges.map(e=>({
     id:e.node.id,
     excerpt:e.node.excerpt,
     title:e.node.frontmatter.title,
     url:e.node.fields.slug,
-    tags:e.node.frontmatter.tags
+    tags:e.node.frontmatter.tags,
+    date:e.node.frontmatter.date
   }))
 
   return (
@@ -33,6 +35,7 @@ export const query=graphql`
         node {
           id
           excerpt
+            
           fields{
             slug
           }
@@ -40,6 +43,7 @@ export const query=graphql`
           frontmatter {
             title
             codeName
+            date
             tags
           }
         }

@@ -1,0 +1,61 @@
+
+.postCard {
+  background: rgba(0, 0, 0, 0.3);
+  height: 11em;
+  color: white;
+  margin-bottom: 1em;
+  width: 100%;
+
+
+}
+
+.postBody {
+  padding: 2em 2em 0 2em;
+  overflow: hidden;
+
+  .exercpt {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    color:#AAAAAA;
+  }
+
+  height: 85%;
+}
+
+.postTitle {
+  a:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    text-shadow: 0px 0px 10px rgba(115, 184, 57, 1);
+  }
+  a {
+    color: #DDD;
+    text-decoration: none;
+    transition: all 0.3s ease 0.1s;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  hr {
+    border-top: 1px solid white;
+
+  }
+}
+
+.postFooter {
+  padding: 0em 2em;
+  height: 15%;
+  background-color: black;
+  color: #AAAAAA;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg{
+    padding-right: 0.2em;
+  }
+}
+

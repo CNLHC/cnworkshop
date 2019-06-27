@@ -15,6 +15,7 @@ export const styles = (theme: Theme) =>
         },
         title: {
             display: 'block',
+            fontFamily:'ProFont'
         },
         search: {
             display: 'none',

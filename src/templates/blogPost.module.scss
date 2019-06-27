@@ -1,0 +1,50 @@
+.toc {
+  border-left: 1px solid #ebedf0;
+  margin-left: 15px;
+  position: fixed;
+  color:#FFF;
+  textDecoration:'none';
+
+  ul {
+    list-style: none;
+    line-height: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+
+  a:active {
+    color: inherit
+  }
+
+  a:visited {
+    color: inherit
+  }
+
+  a:hover {
+    color: inherit
+  }
+
+}
+
+.content{
+  color:#FFF;
+  
+  
+}
+
+.returnButton{
+  position: fixed;
+  bottom:10px;
+  margin-left: 15px;
+  color: white;
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    color: white;
+  }
+
+}
