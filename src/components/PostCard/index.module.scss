@@ -12,6 +12,10 @@
 .postBody {
   padding: 2em 2em 0 2em;
   overflow: hidden;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 
   .exercpt {
     font-size: 0.9em;
@@ -19,31 +23,28 @@
     color:#AAAAAA;
   }
 
-  height: 85%;
+  .postTitle {
+    a:hover {
+      color: #FFF;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      text-shadow: 0px 0px 10px rgba(115, 184, 57, 1);
+    }
+    a {
+      color: #DDD;
+      text-decoration: none;
+      transition: all 0.3s ease 0.1s;
+    }
+    a:visited {
+      color: white;
+    }
+    hr {
+      border-top: 1px solid white;
+    }
+  }
+
 }
 
-.postTitle {
-  a:hover {
-    color: #FFF;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    text-shadow: 0px 0px 10px rgba(115, 184, 57, 1);
-  }
-  a {
-    color: #DDD;
-    text-decoration: none;
-    transition: all 0.3s ease 0.1s;
-  }
-
-  a:visited {
-    color: white;
-  }
-
-  hr {
-    border-top: 1px solid white;
-
-  }
-}
 
 .postFooter {
   padding: 0em 2em;
@@ -59,3 +60,22 @@
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .postFooter{
+    flex-direction: column;
+    height: auto;
+  }
+  .postCard{
+    margin: 20px 0  ;
+    height: auto;
+  }
+  .postBody{
+    padding: 1em 1em 0 1em;
+    .exercpt{
+      max-height: 5em;
+      overflow: hidden;
+      align-items: stretch;
+    }
+  }
+
+}

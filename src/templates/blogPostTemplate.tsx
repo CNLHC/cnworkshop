@@ -37,8 +37,6 @@ const PostPage = ({ data }) => (
         </div>
       </div>
     </div>
-
-
   </Layout>)
 
 export const query = graphql`

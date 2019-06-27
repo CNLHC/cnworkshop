@@ -718,36 +718,53 @@ pre tt:after {
 }
 
 
-.blogContent{
+.blogContent {
   display: flex;
   flex-wrap: nowrap;
   min-height: 100vh;
+  max-width: 100vw;
+
   .sider {
     flex-basis: 15%;
   }
 
-  .contentArea{
+  .contentArea {
     flex-basis: 85%;
-    padding:2em;
+    padding: 2em;
 
   }
 
 }
 
-.blogFooter{
+.blogFooter {
   width: 100%;
   background-color: black;
   color: #666666;
   font-size: 0.8em;
   text-align: center;
 
-  
   height: 3em;
-  .footerText{
+
+  .footerText {
     margin: 0 auto;
 
-
-
   }
+}
+
+@media screen and (max-width: 1023px) {
+  .blogContent {
+    .contentArea {
+      padding: 3px;
+      flex-basis: 100%;
+      max-width: 100vw;
+    }
+
+    .sider {
+      display: none;
+      flex-basis: 0;
+    }
+  }
+
+
 }
 
