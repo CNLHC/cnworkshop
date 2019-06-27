@@ -30,14 +30,14 @@
 }
 
 .content{
+  width: 80%;
   color:#FFF;
-  
-  
 }
+
 
 .returnButton{
   position: fixed;
-  bottom:10px;
+  bottom:3em;
   margin-left: 15px;
   color: white;
   a{
@@ -46,5 +46,8 @@
   a:visited{
     color: white;
   }
+}
 
+.pageContent{
+  display: flex;
 }

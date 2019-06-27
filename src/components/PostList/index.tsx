@@ -16,7 +16,7 @@ class PostList extends React.Component<Props, any> {
   public render() {
     const ItemTemplate = (props: { data: IPostMeta }) => <PostCard postMeta={props.data}/>
     return (
-      <div>
+      <div className={Styles.root}>
         <Grid container  className={Styles.container}>
           {this.props.data.map(e => ItemTemplate({ data: e }))}
         </Grid>

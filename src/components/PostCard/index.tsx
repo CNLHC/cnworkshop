@@ -19,7 +19,7 @@ export interface Props extends WithStyles<typeof styles> {
 }
 class PostCard extends React.Component<Props, any> {
   render() {
-    const tags = this.props.postMeta.tags==null?" ":this.props.postMeta.tags.slice(0,4).join(', ')
+    const tags = this.props.postMeta.tags==null?"无标签":this.props.postMeta.tags.slice(0,4).join(', ')
     return (
       <div className={Styles.postCard}>
         <div className={Styles.postBody}>
