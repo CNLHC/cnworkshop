@@ -7,6 +7,8 @@ import PrimarySearchAppBar from "../components/HeadBar";
 import PostList from "../components/PostList"
 import { generateURL } from "../common/category"
 import { IPostMeta } from "../Typings/Post"
+import 'font-awesome/css/font-awesome.min.css';
+
 
 const IndexPage = ({data}) => {
 
