@@ -1,20 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { WithStyles, withStyles } from "@material-ui/core/styles"
-import Card from "@material-ui/core/Card"
-import CardContent from "@material-ui/core/CardContent"
-import Typography from "@material-ui/core/Typography"
-import { Button, CardActionArea, CardActions, Chip } from "@material-ui/core"
 import { IPostMeta } from "../../Typings/Post"
-import { styles } from "../HeadBar/styles"
-import Styles from "./index.module.scss"
-
-import { faClock, faHome, faTags } from "@fortawesome/free-solid-svg-icons"
+import  Styles from "./index.module.scss"
+import { faClock, faTags } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-
-export interface Props extends WithStyles<typeof styles> {
+export interface Props {
   postMeta: IPostMeta
 }
 class PostCard extends React.Component<Props, any> {
@@ -47,4 +38,4 @@ class PostCard extends React.Component<Props, any> {
 }
 
 
-export default withStyles(styles)(PostCard)
+export default PostCard

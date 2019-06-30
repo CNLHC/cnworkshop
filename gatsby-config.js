@@ -1,54 +1,39 @@
 module.exports = {
   siteMetadata: {
-    title: `cnworkshop`,
-    description: `CN's Blog`,
-    author: `CNLHC`,
+    title: "cnworkshop",
+    description: "CN's Blog",
+    author: "CNLHC",
   },
   plugins: [
     "gatsby-plugin-scss-typescript",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-typescript",
     {
-      resolve: `gatsby-plugin-material-ui`,
-      // If you want to use styled components, in conjunction to Material-UI, you should:
-      // - Change the injection order
-      // - Add the plugin
+      resolve: "gatsby-source-filesystem",
       options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-      // 'gatsby-plugin-styled-components',
-    },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-posts`,
+        name: "markdown-posts",
         path: `${__dirname}/posts/`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         commonmark: true,
         footnotes: true,
         pedantic: true,
         gfm: true,
         plugins: [
-          `gatsby-plugin-slug`,
-
-          `gatsby-remark-autolink-headers`,
+          "gatsby-plugin-slug",
+          "gatsby-remark-autolink-headers",
           {
-            resolve: `gatsby-remark-katex`,
+            resolve: "gatsby-remark-katex",
             options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`,
+              strict: "ignore",
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
-              // classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -56,43 +41,40 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-responsive-image`,
+            resolve: "gatsby-remark-responsive-image",
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 590,
             },
           },
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        path: `./src/data/`,
+        path: "./src/data/",
       },
     },
 
 
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: "gatsby-starter-default",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "#663399",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // "gatsby-plugin-offline",
   ],
 }
