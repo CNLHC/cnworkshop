@@ -1,11 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
-import Seo from "../components/seo"
-import PrimarySearchAppBar from "../components/HeadBar";
 import PostList from "../components/PostList"
-import { generateURL } from "../common/category"
 import { IPostMeta } from "../Typings/Post"
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -45,7 +41,7 @@ export const query=graphql`
           frontmatter {
             title
             codeName
-            date
+            date(formatString:"YYYY年MM月DD日HH:MM")
             tags
           }
         }
