@@ -24,16 +24,16 @@ class Layout extends React.Component<{ children: React.ReactNode[] }, { drawerOp
           <div>
             <div className={Styles.blogContent}>
               <div className={Styles.sider}>
-                <BlogSider/>
+                <BlogSider />
               </div>
               <main className={Styles.contentArea}>
                 {this.props.children}
               </main>
             </div>
             <div className={Styles.blogFooter}>
-              <div className={ Styles.footerText}>
-              <span> Powered by React.js and GraphQL</span>
-              <span> <a href={"http://www.beian.miit.gov.cn"}>京ICP备19023616号-1	</a>  </span>
+              <div className={Styles.footerText}>
+                <span> Powered by React.js and GraphQL</span>
+                <span> <a href={"http://www.beian.miit.gov.cn"}>京ICP备19023616号-1	</a>  </span>
               </div>
             </div>
           </div>

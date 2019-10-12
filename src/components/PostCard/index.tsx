@@ -1,31 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
-import { IPostMeta } from "../../Typings/Post"
-import  Styles from "./index.module.scss"
+import Styles from "./index.module.scss"
 import { faClock, faTags } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Edge } from "../../templates/PostList/query"
 
 export interface Props {
-  postMeta: IPostMeta
+  edge: Edge
 }
 class PostCard extends React.Component<Props, any> {
   render() {
-    const tags = this.props.postMeta.tags==null?"无标签":this.props.postMeta.tags.slice(0,4).join(', ')
+    const edge = this.props.edge
+    const frontmatter = edge.node.frontmatter
+    const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
+    const url = edge.node.fields.slug
     return (
       <div className={Styles.postCard}>
         <div className={Styles.postBody}>
           <div className={Styles.postTitle}>
             <Link
-              to={this.props.postMeta.url}
-            >{this.props.postMeta.title}</Link>
-            <hr/>
+              to={url}
+            >{frontmatter.title}</Link>
+            <hr />
           </div>
-          <p className={Styles.exercpt}> {this.props.postMeta.excerpt}</p>
+          <p className={Styles.exercpt}> {edge.node.excerpt}</p>
         </div>
         <div className={Styles.postFooter}>
           <span>
             <FontAwesomeIcon icon={faClock} />
-            {this.props.postMeta.date}
+            {frontmatter.date}
           </span>
           <span>
             <FontAwesomeIcon icon={faTags} />

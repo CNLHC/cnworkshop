@@ -1,46 +1,14 @@
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  const path = require('path')
+exports.createPages = ({
+  graphql,
+  actions
+}) => {
+  const InstallNodes = [
+    require('./libs/nodes/postDeatil'),
+  ]
 
-  return new Promise((resolve, reject) => {
-    // Query for markdown nodes to use in creating pages.
-    resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(limit: 1000) {
-              edges {
-                node {
-                  fileAbsolutePath
-                  fields{
-                    slug
-                  }
-                  frontmatter {
-                    codeName
-                  }
-                }
-              }
-            }
-          }
-        `
-      ).then(result => {
-        if (result.errors) {
-          reject(result.errors)
-        }
+  return Promise.all(InstallNodes.map(f => f({
+    graphql,
+    actions
+  })))
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          const codeName= node.frontmatter.codeName
-          const absPath = node.fileAbsolutePath
-          categoryPrefix=path.dirname(path.relative(__dirname,absPath))
-          createPage({
-            path:node.fields.slug,
-            component:__dirname+`/src/templates/blogPostTemplate.tsx`,
-            context: {
-              codeName
-            },
-          })
-        })
-      })
-    )
-  })
 }
