@@ -8,7 +8,6 @@ import 'font-awesome/css/font-awesome.min.css';
 
 const IndexPage = ({data}) => {
 
-  console.log(data)
 
   const postMetaList:IPostMeta= data.allMarkdownRemark.edges.map(e=>({
     id:e.node.id,
@@ -21,7 +20,7 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout>
-      <PostList  data={postMetaList}/>
+      {/* <PostList  data={postMetaList}/> */}
     </Layout>
   )
 }
