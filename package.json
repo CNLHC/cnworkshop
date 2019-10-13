@@ -41,6 +41,7 @@
     "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
+    "react-paginate": "^6.3.0",
     "source-map-support": "^0.5.12",
     "stylelint": "^10.0.1",
     "ts-node": "^8.1.0",

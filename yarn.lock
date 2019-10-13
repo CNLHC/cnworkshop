@@ -10864,6 +10864,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-paginate@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.npm.taobao.org/react-paginate/download/react-paginate-6.3.0.tgz#29cbb5d1645227f4e4f959b9d7f43cfae603f801"
+  integrity sha1-Kcu10WRSJ/Tk+Vm51/Q8+uYD+AE=
+  dependencies:
+    prop-types "^15.6.1"
+
 react-reconciler@^0.21.0:
   version "0.21.0"
   resolved "https://registry.npm.taobao.org/react-reconciler/download/react-reconciler-0.21.0.tgz#8180342ab3c8295f860025a86d0a03742a294ea7"

@@ -2,18 +2,20 @@ import React from "react"
 import Layout from "../../components/layout"
 import PostList from "../../components/PostList"
 import { IQuery } from "./query"
-import { graphql} from "gatsby"
+import { graphql } from "gatsby"
+import Paginator from '../../components/PostList/Paginator/index'
 
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-tomorrow.css")
 
 
-const PostPage = ({ data }:{data:IQuery}) => {
+const PostPage = ({ data }: { data: IQuery }) => {
 
   return (
-  <Layout>
-    <PostList data={data} />
-  </Layout>);
+    <Layout>
+      <PostList data={data} />
+      <Paginator pageInfo={data.allMarkdownRemark.pageInfo} />
+    </Layout>);
 }
 
 export const query = graphql`
@@ -37,8 +39,16 @@ export const query = graphql`
               tags
               }
             }
-          }
         }
+        pageInfo {
+          currentPage
+          hasNextPage
+          hasPreviousPage
+          itemCount
+          pageCount
+          perPage
+        }
+      }
     }
 `
 

@@ -3,10 +3,12 @@ import React from "react"
 import Styles from "./layout.module.scss"
 import BlogSider from "./Sider"
 
-class Layout extends React.Component<{ children: React.ReactNode[] }, { drawerOpen: boolean }> {
-  state = {
-    drawerOpen: false,
-  }
+class Layout extends React.Component
+  <{ children: React.ReactNode[] | React.ReactNode }
+  , { drawerOpen: boolean }> {
+    state = {
+      drawerOpen: false,
+    }
 
   render() {
     return (
