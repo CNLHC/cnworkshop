@@ -47,6 +47,8 @@
     "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
     "react-paginate": "^6.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
     "source-map-support": "^0.5.12",
     "styled-components": "^4.4.0",
     "stylelint": "^10.0.1",

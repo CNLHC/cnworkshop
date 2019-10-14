@@ -1,15 +1,11 @@
 import React from 'react'
 import { PageInfo } from "../../../templates/PostList/query"
 import { navigate } from 'gatsby'
-import { Pagination } from 'react-bootstrap';
-import 'react-bootstrap/';
-require('bootstrap/dist/css/bootstrap.min.css');
+import { Pagination } from 'semantic-ui-react'
 
 
 const conf = require('../../../../conf')
 const { PostList } = conf
-
-
 
 interface IProps {
     pageInfo: PageInfo
@@ -17,28 +13,13 @@ interface IProps {
 const Paginator: React.SFC<IProps> = (props) => {
     const { pageInfo } = props
     const navRoute = (page: number) => `/${PostList.prefix}/${page}`
-    return (
-        <Pagination>
-            <Pagination.Prev
-                disabled={!pageInfo.hasPreviousPage}
-                onClick={() => navigate(navRoute(pageInfo.currentPage - 1))} />
-
-            {
-                Array.from(Array(pageInfo.pageCount)).map((_, idx) =>
-                    <Pagination.Item
-                        key={`${idx}`}
-                        active={idx + 1 === pageInfo.currentPage}
-                        onClick={() => navigate(navRoute(idx + 1))}
-                    >{idx + 1}</Pagination.Item>
-                )
-            }
-
-            <Pagination.Next
-                disabled={!pageInfo.hasNextPage}
-                onClick={() => navigate(navRoute(pageInfo.currentPage + 1))} />
-
-        </Pagination>
-    )
+    return (<Pagination
+        activePage={pageInfo.currentPage}
+        totalPages={pageInfo.pageCount}
+        onPageChange={(_, d) => {
+            return navigate(navRoute(typeof d.activePage === 'string' ? parseInt(d.activePage) : d.activePage));
+        }}
+    />)
 }
 
 export default Paginator
