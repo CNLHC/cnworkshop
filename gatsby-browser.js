@@ -7,3 +7,4 @@
 // You can delete this file if you're not using it
 
 require("prismjs/themes/prism-twilight.css")
+require('bootstrap/dist/css/bootstrap.min.css');

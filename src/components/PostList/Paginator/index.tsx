@@ -1,13 +1,13 @@
 import React from 'react'
 import { PageInfo } from "../../../templates/PostList/query"
-import ReactPaginate from 'react-paginate';
-import { Link } from 'gatsby'
-import Styles from 'index.module.scss'
-import { symbol } from 'prop-types';
-const conf = require('../../../../conf')
+import { navigate } from 'gatsby'
+import { Pagination } from 'react-bootstrap';
+import 'react-bootstrap/';
+require('bootstrap/dist/css/bootstrap.min.css');
 
+
+const conf = require('../../../../conf')
 const { PostList } = conf
-console.log(1111, PostList)
 
 
 
@@ -16,27 +16,28 @@ interface IProps {
 }
 const Paginator: React.SFC<IProps> = (props) => {
     const { pageInfo } = props
-    const NextButton = pageInfo.hasNextPage ?
-        <Link to={`${PostList.prefix}/${pageInfo.currentPage + 1}`}>
-            下一页
-            </Link>
-        : null
-    const PreviousButton = pageInfo.hasPreviousPage ?
-        <Link to={`${PostList.prefix}/${pageInfo.currentPage - 1}`}>
-            上一页
-            </Link>
-        : null
+    const navRoute = (page: number) => `/${PostList.prefix}/${page}`
     return (
-        <div className={Styles.paginator}>
-            <ReactPaginate
-                pageCount={pageInfo.pageCount}
-                pageRangeDisplayed={pageInfo.pageCount}
-                marginPagesDisplayed={3}
-                previousLabel={PreviousButton}
-                nextLabel={NextButton}
-                previousClassName={Styles.previous}
-            />
-        </div >
+        <Pagination>
+            <Pagination.Prev
+                disabled={!pageInfo.hasPreviousPage}
+                onClick={() => navigate(navRoute(pageInfo.currentPage - 1))} />
+
+            {
+                Array.from(Array(pageInfo.pageCount)).map((_, idx) =>
+                    <Pagination.Item
+                        key={`${idx}`}
+                        active={idx + 1 === pageInfo.currentPage}
+                        onClick={() => navigate(navRoute(idx + 1))}
+                    >{idx + 1}</Pagination.Item>
+                )
+            }
+
+            <Pagination.Next
+                disabled={!pageInfo.hasNextPage}
+                onClick={() => navigate(navRoute(pageInfo.currentPage + 1))} />
+
+        </Pagination>
     )
 }
 
