@@ -9,18 +9,9 @@ import 'font-awesome/css/font-awesome.min.css';
 const IndexPage = ({data}) => {
 
 
-  const postMetaList:IPostMeta= data.allMarkdownRemark.edges.map(e=>({
-    id:e.node.id,
-    excerpt:e.node.excerpt,
-    title:e.node.frontmatter.title,
-    url:e.node.fields.slug,
-    tags:e.node.frontmatter.tags,
-    date:e.node.frontmatter.date
-  }))
-
   return (
     <Layout>
-      {/* <PostList  data={postMetaList}/> */}
+      <PostList  data={data}/>
     </Layout>
   )
 }
@@ -32,7 +23,6 @@ export const query=graphql`
         node {
           id
           excerpt
-            
           fields{
             slug
           }
