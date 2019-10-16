@@ -1,0 +1,4 @@
+@green: #78CB5B;
+@black: #000000;
+@primaryColor: @green;
+@pageBackground:  @black;

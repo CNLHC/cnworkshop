@@ -2,11 +2,16 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import Styles from "./blogPost.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { Icon } from "semantic-ui-react"
+import styled from "styled-components"
+
 
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-tomorrow.css")
+
+const ClickableIcon = styled.div`
+cursor: pointer;
+`
 
 
 const PostPage = ({ data }) => (
@@ -16,24 +21,21 @@ const PostPage = ({ data }) => (
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         className={Styles.content}
       />
-        <div style={{
-          position: "relative",
-        }}>
-          <div
-            dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}
-            className={Styles.toc}
-          >
-          </div>
-          <div className={Styles.returnButton}>
-            <Link to="/"
-
-            >
-              <FontAwesomeIcon icon={faArrowLeft}
-                               style={{
-                                 fontSize: "48px",
-                               }}
-              />
-            </Link>
+      <div style={{
+        position: "relative",
+      }}>
+        <div
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}
+          className={Styles.toc}
+        >
+        </div>
+        <div className={Styles.returnButton}>
+          <ClickableIcon>
+            <Icon
+              name={"arrow left"}
+              onClick={() => window.history.back()} size={"huge"}
+            />
+          </ClickableIcon>
         </div>
       </div>
     </div>

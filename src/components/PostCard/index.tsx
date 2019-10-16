@@ -1,43 +1,62 @@
 import React from "react"
-import { Link } from "gatsby"
-import Styles from "./index.module.scss"
-import { faClock, faTags } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Edge } from "../../templates/PostList/query"
+import { Icon, Card } from 'semantic-ui-react'
+import styled from 'styled-components'
+import { navigate } from "gatsby"
+
+
+const PostExtra = styled.div`
+  padding: 0em 2em;
+  height: 15%;
+  background-color: black;
+  color: #AAAAAA;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+const FancyTitleLink = styled.div`
+      color: #DDD;
+      text-decoration: none;
+      transition: all 0.3s ease 0.1s;
+
+      &:hover{
+        color: white;
+        cursor: pointer;
+      }
+`
 
 export interface Props {
   edge: Edge
 }
-class PostCard extends React.Component<Props, any> {
-  render() {
-    const edge = this.props.edge
-    const frontmatter = edge.node.frontmatter
-    const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
-    const url = edge.node.fields.slug
-    return (
-      <div className={Styles.postCard}>
-        <div className={Styles.postBody}>
-          <div className={Styles.postTitle}>
-            <Link
-              to={url}
-            >{frontmatter.title}</Link>
-            <hr />
-          </div>
-          <p className={Styles.exercpt}> {edge.node.excerpt}</p>
-        </div>
-        <div className={Styles.postFooter}>
+
+const PostCard: React.SFC<Props> = (props) => {
+  const edge = props.edge
+  const frontmatter = edge.node.frontmatter
+  const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
+  const url = edge.node.fields.slug
+  return (
+    <Card fluid>
+      <Card.Content header={
+        <FancyTitleLink onClick={() => navigate(url)}>
+          {frontmatter.title}
+        </FancyTitleLink>
+      } />
+      <Card.Content description={edge.node.excerpt} />
+      <Card.Content extra>
+        <PostExtra>
           <span>
-            <FontAwesomeIcon icon={faClock} />
+            <Icon name={"clock outline"} />
             {frontmatter.date}
           </span>
           <span>
-            <FontAwesomeIcon icon={faTags} />
+            <Icon name={"tags"} />
             {tags}
           </span>
-        </div>
-      </div>
-    )
-  }
+        </PostExtra>
+      </Card.Content>
+    </Card>
+  )
 }
 
 
