@@ -5868,10 +5868,10 @@ gatsby-plugin-slug@^1.0.1:
   dependencies:
     parse-filepath "^1.0.2"
 
-gatsby-plugin-styled-components@^3.1.9:
-  version "3.1.9"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-styled-components/download/gatsby-plugin-styled-components-3.1.9.tgz#b5e71c5cb14f6c63941ebda4255e09ba1f1d8bc6"
-  integrity sha1-teccXLFPbGOUHr2kJV4Juh8di8Y=
+gatsby-plugin-styled-components@^3.1.11:
+  version "3.1.11"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-styled-components/download/gatsby-plugin-styled-components-3.1.11.tgz#8e249f9451e64cf8e882aad9f007e3a8741acfd4"
+  integrity sha1-jiSflFHmTPjogqrZ8AfjqHQaz9Q=
   dependencies:
     "@babel/runtime" "^7.6.3"
 
