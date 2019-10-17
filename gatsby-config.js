@@ -51,7 +51,6 @@ module.exports = {
         ],
       },
     },
-    "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
@@ -59,22 +58,16 @@ module.exports = {
         path: "./src/data/",
       },
     },
-
-
-    "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+        path: "assets",
       },
     },
 
+
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // "gatsby-plugin-offline",

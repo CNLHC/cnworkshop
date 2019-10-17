@@ -21,7 +21,7 @@
     "gatsby-remark-katex": "^3.0.4",
     "gatsby-remark-mathjax": "^1.0.0",
     "gatsby-remark-prismjs": "^3.2.9",
-    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
+    "gatsby-remark-responsive-image": "latest",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-remark": "^2.3.12",

@@ -34,6 +34,7 @@ class Layout extends React.Component
     return (
       <StaticQuery
         query={graphql`
+
       query SiteTitleQuery {
         site {
           siteMetadata {
@@ -42,8 +43,9 @@ class Layout extends React.Component
         }
       }
     `}
-        render={data => (
-          <div>
+        render={data => {
+          console.log(data)
+          return (<div>
             <BlogSider />
             <Sidebar.Pusher>
               <div className={Styles.blogContent}>
@@ -54,8 +56,8 @@ class Layout extends React.Component
               <span> Powered by React.js and GraphQL</span>
               <span> <a href={"http://www.beian.miit.gov.cn"}>京ICP备19023616号-1	</a>  </span>
             </Footer>
-          </div>
-        )}
+          </div>);
+        }}
       />
     )
   }
