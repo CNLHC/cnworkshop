@@ -1,0 +1,23 @@
+@import "../palette.less";
+
+//TextColor
+
+@descriptionColor: @Gray4;
+@metaColor: @Gray4;
+@extraColor: @Gray1;
+
+@background: @Gray8;
+@extraBackground: @Gray10;
+@linkHoverBackground: @Gray9;
+
+
+
+
+
+@borderRadius:0;
+@border: none;
+
+@linkHoverBorder:  1px dashed white ;
+@boxShadow:none;
+
+

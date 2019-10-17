@@ -23,6 +23,11 @@ const FancyTitleLink = styled.div`
       &:hover{
         color: white;
         cursor: pointer;
+      };
+      hr{
+        margin-top:0.5rem;
+        background: white;
+
       }
 `
 
@@ -36,14 +41,18 @@ const PostCard: React.SFC<Props> = (props) => {
   const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
   const url = edge.node.fields.slug
   return (
-    <Card fluid>
-      <Card.Content header={
+    <Card
+      fluid
+      meta={" "}
+      // onClick={() => navigate(url)}
+      header={
         <FancyTitleLink onClick={() => navigate(url)}>
           {frontmatter.title}
+          <hr />
         </FancyTitleLink>
-      } />
-      <Card.Content description={edge.node.excerpt} />
-      <Card.Content extra>
+      }
+      description={edge.node.excerpt}
+      extra={
         <PostExtra>
           <span>
             <Icon name={"clock outline"} />
@@ -54,8 +63,10 @@ const PostCard: React.SFC<Props> = (props) => {
             {tags}
           </span>
         </PostExtra>
-      </Card.Content>
-    </Card>
+
+      }
+    />
+
   )
 }
 

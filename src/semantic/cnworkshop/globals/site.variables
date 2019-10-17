@@ -1,0 +1,8 @@
+
+@import "../palette.less";
+
+@green: #78CB5B;
+@black: #000000;
+@primaryColor: @green;
+
+@pageBackground:  @Gray7;
