@@ -7,3 +7,5 @@
 // You can delete this file if you're not using it
 
 require("prismjs/themes/prism-twilight.css")
+require(`katex/dist/katex.min.css`)
+require("prismjs/themes/prism-tomorrow.css")
