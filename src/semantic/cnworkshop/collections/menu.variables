@@ -2,3 +2,6 @@
 
 @itemTextColor: #FFFFF;
 @verticalBackground: @Gray8;
+
+@paginationActiveTextColor: @Gray1;
+@paginationActiveBackground: Blue;

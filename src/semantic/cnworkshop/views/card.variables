@@ -10,10 +10,6 @@
 @extraBackground: @Gray10;
 @linkHoverBackground: @Gray9;
 
-
-
-
-
 @borderRadius:0;
 @border: none;
 
