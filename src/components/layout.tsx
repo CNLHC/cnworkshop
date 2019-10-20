@@ -4,7 +4,6 @@ import BlogSidebar from "./SideBar"
 import { makeStyles, createStyles, ThemeProvider } from "@material-ui/styles"
 import { Theme } from "@material-ui/core"
 import Dark from '../theme/dark'
-import { minHeight } from "@material-ui/system"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -38,7 +37,6 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(1, 3),
       height: '2em',
     }
-
   }),
 );
 

@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 import PostList from "../../components/PostList"
 import { IQuery } from "./query"
 import { graphql } from "gatsby"
-import Paginator from '../../components/PostList/Paginator/index'
+import Paginator from '../../components/Paginator/index'
 
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-tomorrow.css")
