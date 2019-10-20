@@ -1,28 +1,32 @@
 import React from "react"
 import PostCard from "../PostCard"
-import Styles from './index.module.scss'
-import { IQuery, Edge } from '../../templates/PostList/query'
+import { IQuery } from '../../templates/PostList/query'
+import { useTheme } from "@material-ui/core"
+import useStyles from "./style"
 
 
 export interface Props {
   data: IQuery
 }
 
-class PostList extends React.Component<Props, any> {
-  public render() {
-    const { data } = this.props
-    return (
-      <div className={Styles.root}>
-        <div className={Styles.container}>
-          {data.allMarkdownRemark.edges.map(e =>
-            <PostCard
-              key={`postCard-${e.node.id}`}
-              edge={e} />
-          )}
-        </div >
-      </div>
-    )
-  }
+
+const PostList = (props: Props) => {
+  const { data } = props
+  const theme = useTheme()
+  const style = useStyles(theme)
+  return (
+    <div className={style.CardContainer}>
+      {data.allMarkdownRemark.edges.map(e =>
+        <div
+
+          key={`postCard-${e.node.id}`}
+          className={style.CardWrapper}>
+          <PostCard
+            edge={e} />
+        </div>
+      )}
+    </div>
+  )
 }
 
 

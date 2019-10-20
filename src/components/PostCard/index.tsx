@@ -1,8 +1,10 @@
 import React from "react"
 import { Edge } from "../../templates/PostList/query"
-import { Icon, Card } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { navigate } from "gatsby"
+import { Card, Typography, useTheme, CardActionArea, CardActions, Button } from "@material-ui/core"
+import useStyles from "./style"
+import { CardContent } from "semantic-ui-react"
 
 
 const PostExtra = styled.div`
@@ -36,37 +38,34 @@ export interface Props {
 }
 
 const PostCard: React.SFC<Props> = (props) => {
+  const theme = useTheme()
+  const style = useStyles(theme)
   const edge = props.edge
   const frontmatter = edge.node.frontmatter
   const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
   const url = edge.node.fields.slug
+
   return (
-    <Card
-      fluid
-      meta={" "}
-      // onClick={() => navigate(url)}
-      header={
-        <FancyTitleLink onClick={() => navigate(url)}>
-          {frontmatter.title}
-          <hr />
-        </FancyTitleLink>
-      }
-      description={edge.node.excerpt}
-      extra={
-        <PostExtra>
-          <span>
-            <Icon name={"clock outline"} />
-            {frontmatter.date}
-          </span>
-          <span>
-            <Icon name={"tags"} />
-            {tags}
-          </span>
-        </PostExtra>
-
-      }
-    />
-
+    <Card className={style.card}>
+      <CardActionArea onClick={() => navigate(url)}>
+        <CardContent className={style.CardContent}>
+          <Typography gutterBottom variant="h5" component="h2">
+            {frontmatter.title}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {edge.node.excerpt}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
   )
 }
 
