@@ -1,7 +1,7 @@
 import React from "react"
 import { IQuery } from "./query"
 import { graphql } from "gatsby"
-import PageArchive from "../../pages/archive";
+import PageArchive from "../../components/archive";
 
 
 

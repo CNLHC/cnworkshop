@@ -1,21 +1,23 @@
-import React from "react"
+import React, { useLayoutEffect } from "react"
 import Layout from "../components/layout"
 import PostList from "../components/PostList"
-import { graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
+import PageArchive from "../components/archive"
 
 
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
+  // useLayoutEffect(() => {
+  //   navigate("/all")
+  // }, [])
 
 
   return (
-    <Layout>
-      <PostList  data={data}/>
-    </Layout>
+    <PageArchive data={data} />
   )
 }
 
-export const query=graphql`
+export const query = graphql`
   {
     allMarkdownRemark {
       edges {

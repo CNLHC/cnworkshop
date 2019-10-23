@@ -5,6 +5,7 @@ module.exports = {
     author: "CNLHC",
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-less`,
     "gatsby-plugin-scss-typescript",

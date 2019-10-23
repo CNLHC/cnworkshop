@@ -31,7 +31,7 @@ const BlogSidebar = () => {
     <Divider />
 
     <div className={classes.navMenu}>
-      <NavItem title={"归档"} onClick={() => navigate("all")} />
+      <NavItem title={"归档"} onClick={() => navigate("/all")} />
       <NavItem title={"标签"} onClick={() => navigate("")} />
       <NavItem title={"时间"} onClick={() => navigate("")} />
       <NavItem title={"关于"} onClick={() => navigate("")} />
