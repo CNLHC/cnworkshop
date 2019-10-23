@@ -2,9 +2,11 @@ import React from "react"
 import { Edge } from "../../templates/PostList/query"
 import styled from 'styled-components'
 import { navigate } from "gatsby"
-import { Card, Typography, useTheme, CardActionArea, CardActions, Button } from "@material-ui/core"
+import { Card, Typography, useTheme, CardActionArea, CardActions, Button, Divider, Chip, ButtonGroup } from "@material-ui/core"
 import useStyles from "./style"
 import { CardContent } from "semantic-ui-react"
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 
 
 const PostExtra = styled.div`
@@ -42,7 +44,7 @@ const PostCard: React.SFC<Props> = (props) => {
   const style = useStyles(theme)
   const edge = props.edge
   const frontmatter = edge.node.frontmatter
-  const tags = frontmatter.tags == null ? "无标签" : frontmatter.tags.slice(0, 4).join(', ')
+  const tags = !frontmatter.tags ? ['无标签'] : frontmatter.tags
   const url = edge.node.fields.slug
 
   return (
@@ -57,13 +59,30 @@ const PostCard: React.SFC<Props> = (props) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+
+      <CardActions className={style.CardActionArea}>
+
+        <div className={style.ActionItem}>
+          <CalendarTodayIcon />
+          <Button size="small" >
+            {edge.node.frontmatter.date}
+          </Button>
+        </div>
+
+        <div className={style.ActionItem}>
+          <LocalOfferIcon />
+          {
+            tags.map(e =>
+              <Button size="small" key={`${edge.node.id}-tag-${e}`}>
+                {e}
+              </Button>
+            )
+
+          }
+        </div>
+
+
+
       </CardActions>
     </Card>
   )

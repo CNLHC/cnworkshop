@@ -8,7 +8,19 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         CardContent: {
             padding: "1rem"
+        },
+        CardActionArea:{
+            display:"flex",
+            justifyContent:"space-between"
+        },
+        ActionItem:{
+            display:"flex",
+            alignItems:"center"
+
         }
+
+
+
     }),
 );
 
