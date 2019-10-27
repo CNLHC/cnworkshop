@@ -31,6 +31,7 @@ export interface Node {
     excerpt: string;
     fields: Fields;
     fileAbsolutePath: string;
+    timeToRead: number;
     frontmatter: Frontmatter;
 }
 

@@ -62,12 +62,13 @@ const PostCard: React.SFC<Props> = (props) => {
 
       <CardActions className={style.CardActionArea}>
 
+
         <div className={style.ActionItem}>
-          <CalendarTodayIcon />
           <Button size="small" >
-            {edge.node.frontmatter.date}
+            {edge.node.frontmatter.date} &nbsp;&nbsp;&nbsp;   阅读时间: {edge.node.timeToRead.toString()}分钟
           </Button>
         </div>
+
 
         <div className={style.ActionItem}>
           <LocalOfferIcon />

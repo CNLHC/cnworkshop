@@ -23,6 +23,7 @@ export const query = graphql`
                 slug
               }
               fileAbsolutePath
+              timeToRead
               frontmatter {
                 title
                 codeName
