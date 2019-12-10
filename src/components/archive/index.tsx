@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../layout'
+import Layout from '../Layout/layout'
 import Paginator from '../Paginator/index'
 import useStyles from "./style"
 import PostList from "../PostList"
