@@ -1,9 +1,8 @@
 import { graphql, StaticQuery } from "gatsby"
 import React from "react"
 import BlogSidebar from "./SideBar"
-import { makeStyles, createStyles, ThemeProvider } from "@material-ui/styles"
-import { Theme } from "@material-ui/core"
-import Dark from '../theme/dark'
+import { makeStyles, createStyles} from "@material-ui/styles"
+import { Theme, useTheme } from "@material-ui/core"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -50,7 +49,6 @@ class Layout extends React.Component
 
   render() {
     return (
-      <ThemeProvider theme={Dark}>
         <StaticQuery
           query={graphql`
                     query SiteTitleQuery {
@@ -62,7 +60,8 @@ class Layout extends React.Component
                     }
                   `}
           render={_data => {
-            const style = useStyles(Dark)
+            const theme = useTheme()
+            const style = useStyles(theme)
             return (
               <div className={style.root}>
                 <BlogSidebar />
@@ -81,7 +80,6 @@ class Layout extends React.Component
             );
           }}
         />
-      </ThemeProvider>
     )
   }
 

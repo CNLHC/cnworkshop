@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-less`,
+    // `gatsby-plugin-less`,
     "gatsby-plugin-scss-typescript",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
