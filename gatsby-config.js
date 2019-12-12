@@ -27,6 +27,7 @@ module.exports = {
         gfm: true,
         plugins: [
           "gatsby-plugin-slug",
+          "gatsby-remark-graphviz",
           "gatsby-remark-autolink-headers",
           {
             resolve: "gatsby-remark-katex",
@@ -65,7 +66,6 @@ module.exports = {
         path: "assets",
       },
     },
-
 
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
