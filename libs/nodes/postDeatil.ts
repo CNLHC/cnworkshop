@@ -42,8 +42,6 @@ module.exports = ({
         }) => {
           const codeName = node.frontmatter.codeName
           const templatePath = path.resolve(`${__dirname}/../../src/templates/PostDetail/index.tsx`)
-
-
           createPage({
             path: node.fields.slug,
             component: templatePath,
@@ -54,7 +52,6 @@ module.exports = ({
         })
         // Create pagination index view
         const PostListConf = conf.PostList
-        console.log(1111,PostListConf)
 
         const {
           prefix,

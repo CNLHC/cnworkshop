@@ -24,6 +24,10 @@ export const PageRoot = styled.div`
 `
 
 export const PageContent = styled.div`
+  @media (max-width: 600px) {
+     width:100%;
+     overflow-x: scroll;
+  }
   width: 80%;
   color: ${props => props.theme.palette.text.primary};
   img {
@@ -40,8 +44,15 @@ export const PageContent = styled.div`
 
 export const FloatingRail = styled.div`
   width: 20%;
+   @media (max-width: 600px) {
+     display:none;
+    }
 `
 export const FloatingArea = styled.div`
+
+   @media (max-width: 600px) {
+     display:none;
+    }
   position: sticky;
   top: 2rem;
   a {

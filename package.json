@@ -34,6 +34,8 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.2.0",
     "moment": "^2.24.0",
+    "pinyin": "^2.9.0",
+    "pinyinjs": "^2.2.1",
     "prismjs": "^1.16.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

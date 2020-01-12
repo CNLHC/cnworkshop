@@ -3766,6 +3766,13 @@ commander@^2.11.0, commander@^2.12.1, commander@^2.19.0, commander@^2.20.0:
   resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.1.tgz#3863ce3ca92d0831dcf2a102f5fb4b5926afd0f9"
   integrity sha1-OGPOPKktCDHc8qEC9ftLWSav0Pk=
 
+commander@~1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-1.1.1.tgz#50d1651868ae60eccff0a2d9f34595376bc6b041"
+  integrity sha1-UNFlGGiuYOzP8KLZ80WVN2vGsEE=
+  dependencies:
+    keypress "0.1.x"
+
 commander@~2.8.1:
   version "2.8.1"
   resolved "https://registry.npm.taobao.org/commander/download/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
@@ -8821,6 +8828,11 @@ keyboard-key@^1.0.4:
   resolved "https://registry.npm.taobao.org/keyboard-key/download/keyboard-key-1.0.4.tgz#52d8fa07b7e17757072aa22a67fb4ae85e4c46b0"
   integrity sha1-Utj6B7fhd1cHKqIqZ/tK6F5MRrA=
 
+keypress@0.1.x:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/keypress/download/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
+  integrity sha1-SjGI1CkbZrT2XtuZ+AaqmuKTWSo=
+
 keyv@3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/keyv/download/keyv-3.0.0.tgz#44923ba39e68b12a7cec7df6c3268c031f2ef373"
@@ -10025,6 +10037,13 @@ node-sass@^4.12.0:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
+nodejieba@^2.2.1:
+  version "2.3.3"
+  resolved "https://registry.npm.taobao.org/nodejieba/download/nodejieba-2.3.3.tgz#743fc196875b875822e22a299353cac8e0d04777"
+  integrity sha1-dD/Blodbh1gi4iopk1PKyODQR3c=
+  dependencies:
+    nan "^2.14.0"
+
 noms@0.0.0:
   version "0.0.0"
   resolved "https://registry.npm.taobao.org/noms/download/noms-0.0.0.tgz#da8ebd9f3af9d6760919b27d9cdc8092a7332859"
@@ -10954,6 +10973,24 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pinyin@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.npm.taobao.org/pinyin/download/pinyin-2.9.0.tgz#1e77025bf4fafdad4ea410022837b5f97e53aab1"
+  integrity sha1-HncCW/T6/a1OpBACKDe1+X5TqrE=
+  dependencies:
+    commander "~1.1.1"
+    object-assign "^4.0.1"
+  optionalDependencies:
+    nodejieba "^2.2.1"
+
+pinyinjs@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/pinyinjs/download/pinyinjs-2.2.1.tgz#ee417a1c5de3788450f64f44a3b6e5dcf02f1151"
+  integrity sha1-7kF6HF3jeIRQ9k9Eo7bl3PAvEVE=
+  dependencies:
+    commander "~1.1.1"
+    segment "0.0.5"
 
 pixelmatch@^4.0.2:
   version "4.0.2"
@@ -12726,6 +12763,11 @@ seek-bzip@^1.0.5:
   integrity sha1-z+kXyz0nS8/6x5J1ivUxc+sfq9w=
   dependencies:
     commander "~2.8.1"
+
+segment@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/segment/download/segment-0.0.5.tgz#a137c3fec41f41c1dc604051c7134b824c3851d9"
+  integrity sha1-oTfD/sQfQcHcYEBRxxNLgkw4Udk=
 
 select-hose@^2.0.0:
   version "2.0.0"

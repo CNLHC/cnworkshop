@@ -4,6 +4,11 @@ import { Theme } from "@material-ui/core";
 const drawerWidth = 200;
 const useStyles = makeStyles((theme?: Theme) =>
     createStyles({
+        '@media (max-width:800px)': {
+            drawer : {
+                display:'none'
+            }
+        },
         drawer: {
             width: drawerWidth,
             flexShrink: 0,
