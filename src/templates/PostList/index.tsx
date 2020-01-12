@@ -14,6 +14,7 @@ export const query = graphql`
       allMarkdownRemark(
         skip:$offset
         limit:$limit
+        sort: {order: DESC, fields: frontmatter___date}
         ) {
           edges {
             node {
