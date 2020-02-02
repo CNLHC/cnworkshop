@@ -71,3 +71,7 @@ yarn-error.log
 .idea
 .vscode
 
+# apollo
+apollo.config.js
+schema.json
+
