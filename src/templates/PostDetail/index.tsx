@@ -9,7 +9,7 @@ const PostPage = (props: { data: IQuery }) => {
 }
 
 export const query = graphql`
-    query($codeName: String!) {
+    query PageDetailByCodeName($codeName: String!) {
         markdownRemark(frontmatter: { codeName: { eq: $codeName} }) {
             html
             tableOfContents(pathToSlugField: "fields.slug", heading: null, maxDepth: 4)

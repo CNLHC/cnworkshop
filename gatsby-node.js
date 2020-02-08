@@ -6,7 +6,7 @@ exports.createPages = ({
   actions
 }) => {
   const InstallNodes = [
-    require('./libs/nodes/postDeatil'),
+    require('./src/libs/nodes/postDeatil').default,
   ]
 
   return Promise.all(InstallNodes.map(f => f({

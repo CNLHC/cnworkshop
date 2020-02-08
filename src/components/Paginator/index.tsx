@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageInfo } from "../../templates/PostList/query"
 import { navigate } from 'gatsby'
-import conf from '../../../conf'
+import conf from '../../conf'
 import styled from 'styled-components'
 import { TablePagination, useTheme, Input, Button, IconButton } from '@material-ui/core'
 

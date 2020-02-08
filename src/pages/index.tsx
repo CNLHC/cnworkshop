@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  {
+  query IndexPostList {
     allMarkdownRemark(
       limit:50,
       sort: {order: DESC, fields: frontmatter___date}

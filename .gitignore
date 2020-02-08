@@ -76,3 +76,6 @@ apollo.config.js
 schema.json
 .secret
 
+__generated__
+
+

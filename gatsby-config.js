@@ -71,7 +71,19 @@ module.exports = {
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-codegen",
-      options: {}
+      options: {
+        includes:[
+          "./src/**/*.tsx",
+          "./src/**/*.ts",
+          "./libs/**/*.ts",
+          "./node_modules/gatsby-source-contentful/src/*.js",
+          "./node_modules/gatsby-transformer-sharp/src/*.js",
+          "./node_modules/gatsby-image/src/*.js"
+
+
+        ]
+
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

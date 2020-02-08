@@ -84,7 +84,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "node -r ts-node/register libs/deploy/index.ts "
+    "deploy": "node -r ts-node/register src/libs/deploy/index.ts "
+
   },
   "repository": {
     "type": "git",
