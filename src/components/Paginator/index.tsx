@@ -21,12 +21,6 @@ interface IProps {
 }
 const Paginator: React.SFC<IProps> = (props) => {
     const { pageInfo } = props
-    // const pageInfo = {
-    //     pageCount: 50,
-    //     currentPage: 22,
-    //     itemCount: 100
-
-    // }
     const navRoute = (page: number) => `/${PostList.prefix}/${page}`
     const theme = useTheme()
     const styles = useStyles(theme)
@@ -77,21 +71,15 @@ const Paginator: React.SFC<IProps> = (props) => {
                             className={styles.PaginatorNumber}
                             variant={parseInt(v) === pageInfo.currentPage ? "contained" : "text"}
                             onClick={() => {
-                                const page = parseInt(v)
+                                const page = parseInt(v === '...' ? "1" : v)
                                 if (page !== NaN) {
                                     navigate(navRoute(page))
-
-
                                 }
                             }
                             }
                             color={"primary"}
                             key={`paginate-${v}-${idx}`}
                         >{v}</ Button >)
-
-
-
-
                 }
                 <IconButton
                     disabled={!pageInfo.hasNextPage}

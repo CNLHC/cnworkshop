@@ -1,11 +1,11 @@
 import React from "react"
-import { graphql} from "gatsby"
+import { graphql } from "gatsby"
 import { IQuery } from "./query"
 import PostDetail from "../../components/PageDetail"
 
 
-const PostPage = (props:{ data:IQuery}) => {
-  return (<PostDetail data={props.data}/>);
+const PostPage = (props: { data: IQuery }) => {
+    return (<PostDetail data={props.data} />);
 }
 
 export const query = graphql`

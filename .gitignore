@@ -74,4 +74,5 @@ yarn-error.log
 # apollo
 apollo.config.js
 schema.json
+.secret
 

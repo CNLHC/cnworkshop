@@ -2,11 +2,12 @@ import { makeStyles, createStyles } from "@material-ui/styles";
 import { Theme } from "@material-ui/core";
 
 const drawerWidth = 200;
-const useStyles = makeStyles((theme?: Theme) =>
-    createStyles({
-        '@media (max-width:800px)': {
-            drawer : {
-                display:'none'
+const useStyles = makeStyles((theme?: Theme) => {
+
+    return createStyles({
+        [theme.breakpoints.down('sm')]: {
+            drawer: {
+                display: 'none'
             }
         },
         drawer: {
@@ -26,8 +27,8 @@ const useStyles = makeStyles((theme?: Theme) =>
                 color: theme.palette.primary[400]
             }
         }
-
-    }),
+    });
+},
 );
 
 export default useStyles;

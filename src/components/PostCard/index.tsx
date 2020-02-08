@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import { Edge } from "../../templates/PostList/query"
 import styled from 'styled-components'
 import { navigate } from "gatsby"
@@ -7,6 +7,10 @@ import useStyles from "./style"
 import { CardContent } from "semantic-ui-react"
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+
+
+
+
 
 
 const PostExtra = styled.div`
@@ -42,51 +46,68 @@ export interface Props {
 const PostCard: React.SFC<Props> = (props) => {
   const theme = useTheme()
   const style = useStyles(theme)
+  const [raise, setRaise] = useState(false)
   const edge = props.edge
   const frontmatter = edge.node.frontmatter
   const tags = !frontmatter.tags ? ['无标签'] : frontmatter.tags
   const url = edge.node.fields.slug
+  console.log(theme)
+  console.log(theme.breakpoints.up('sm'))
 
   return (
-    <Card className={style.card}>
-      <CardActionArea onClick={() => navigate(url)}>
-        <CardContent className={style.CardContent}>
-          <Typography gutterBottom variant="h5" component="h2">
-            {frontmatter.title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {edge.node.excerpt}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+    <>
+      <Card
+        className={style.card}
+        raised={raise}
+        onMouseEnter={() => setRaise(true)}
+        onMouseLeave={() => setRaise(false)}
+      >
+        <CardActionArea onClick={
+          () => navigate(url)
+        } >
+          <CardContent className={style.CardContent}>
+            <Typography gutterBottom variant="h5" component="h2" style={{
+              marginBottom: "1rem"
+            }}>
+              {frontmatter.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {edge.node.excerpt}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
 
-      <CardActions className={style.CardActionArea}>
+        <CardActions className={style.CardActionArea}>
 
-
-        <div className={style.ActionItem}>
-          <Button size="small" >
-            {edge.node.frontmatter.date} &nbsp;&nbsp;&nbsp;   阅读时间: {edge.node.timeToRead.toString()}分钟
-          </Button>
-        </div>
-
-
-        <div className={style.ActionItem}>
-          <LocalOfferIcon />
-          {
-            tags.map(e =>
-              <Button size="small" key={`${edge.node.id}-tag-${e}`}>
-                {e}
-              </Button>
-            )
-
-          }
-        </div>
+          <div className={style.ActionItem}>
+            <Button size="small" >
+              {edge.node.frontmatter.date} &nbsp;&nbsp;&nbsp;   阅读时间: {edge.node.timeToRead.toString()}分钟
+  </Button>
+          </div>
 
 
+          <div className={style.ActionItem}>
+            <LocalOfferIcon />
+            {
+              tags.map(e =>
+                <Button size="small" key={`${edge.node.id}-tag-${e}`}>
+                  {e}
+                </Button>
+              )
 
-      </CardActions>
-    </Card>
+            }
+          </div>
+
+
+
+        </CardActions>
+      </Card>
+
+
+    </>
+
   )
+
 }
 
 

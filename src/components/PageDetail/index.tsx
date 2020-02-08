@@ -12,7 +12,7 @@ require("prismjs/themes/prism-tomorrow.css")
 const PostDetail = (props: { data: IQuery }) => {
   const theme = useTheme()
   const styles = useStyles(theme)
-  const data = props.data
+  const { data } = props
   return (
     <Layout>
       <PageRoot>

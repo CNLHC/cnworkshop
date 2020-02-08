@@ -4,8 +4,8 @@ const Dark= {
     palette: {
         text: {
             primary: "rgba(255,255,255,1)",
-            secondary: "rgba(255,255,255,0.87)",
-            disabled: "rgba(255,255,255,0.60)"
+            secondary: "rgba(255,255,255,0.60)",
+            disabled: "rgba(255,255,255,0.40)"
         },
         primary: {
             50: "#fcfaff",

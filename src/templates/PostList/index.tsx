@@ -10,7 +10,7 @@ const PostPage = ({ data }: { data: IQuery }) => {
 }
 
 export const query = graphql`
-    query($offset:Int!,$limit:Int!) {
+    query hi($offset:Int!,$limit:Int!) {
       allMarkdownRemark(
         skip:$offset
         limit:$limit

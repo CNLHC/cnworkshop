@@ -16,18 +16,13 @@ const useStyles = makeStyles((theme: Theme) =>
             justifyContent: "flex-around",
             color: theme.palette.text.primary,
             margin : "0 1rem"
-
-
         },
         PaginatorArray: {
-
             color: theme.palette.text.primary
         },
         PaginatorNumber: {
             color: theme.palette.text.primary
-
         },
-
         QuickJumperArea: {
             color: theme.palette.text.primary
         },

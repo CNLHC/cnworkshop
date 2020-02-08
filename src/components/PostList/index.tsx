@@ -18,7 +18,6 @@ const PostList = (props: Props) => {
     <div className={style.CardContainer}>
       {data.allMarkdownRemark.edges.map(e =>
         <div
-
           key={`postCard-${e.node.id}`}
           className={style.CardWrapper}>
           <PostCard

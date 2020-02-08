@@ -9,18 +9,17 @@ const useStyles = makeStyles((theme: Theme) =>
         CardContent: {
             padding: "1rem"
         },
-        CardActionArea:{
-            display:"flex",
-            justifyContent:"space-between"
+        CardActionArea: {
+            display: "flex",
+            justifyContent: "space-between",
+            "@media (max-width: 600px)": {
+                display: "none"
+            },
         },
-        ActionItem:{
-            display:"flex",
-            alignItems:"center"
-
+        ActionItem: {
+            display: "flex",
+            alignItems: "center"
         }
-
-
-
     }),
 );
 
