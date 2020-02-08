@@ -51,8 +51,6 @@ const PostCard: React.SFC<Props> = (props) => {
   const frontmatter = edge.node.frontmatter
   const tags = !frontmatter.tags ? ['无标签'] : frontmatter.tags
   const url = edge.node.fields.slug
-  console.log(theme)
-  console.log(theme.breakpoints.up('sm'))
 
   return (
     <>
@@ -78,19 +76,17 @@ const PostCard: React.SFC<Props> = (props) => {
         </CardActionArea>
 
         <CardActions className={style.CardActionArea}>
-
           <div className={style.ActionItem}>
             <Button size="small" >
               {edge.node.frontmatter.date} &nbsp;&nbsp;&nbsp;   阅读时间: {edge.node.timeToRead.toString()}分钟
-  </Button>
+            </Button>
           </div>
-
 
           <div className={style.ActionItem}>
             <LocalOfferIcon />
             {
               tags.map(e =>
-                <Button size="small" key={`${edge.node.id}-tag-${e}`}>
+                <Button size="small" key={`${edge.node.id}-tag-${e}`} onClick={() => navigate(`/tag/${e}/`)}>
                   {e}
                 </Button>
               )

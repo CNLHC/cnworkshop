@@ -4,9 +4,9 @@ import Paginator from '../Paginator/index'
 import useStyles from "./style"
 import PostList from "../PostList"
 import { Grid, useTheme } from "@material-ui/core"
-import { IQuery } from '../../templates/PostList/query'
+import { TPostListData } from '../../templates/PostList'
 
-export default function PageArchive(props: { data: IQuery }) {
+export default function PageArchive(props: { data: TPostListData }) {
     const theme = useTheme()
     const style = useStyles(theme)
     const { data } = props
@@ -27,5 +27,3 @@ export default function PageArchive(props: { data: IQuery }) {
 
     )
 }
-
-
