@@ -4,6 +4,7 @@ import BlogSidebar from "../SideBar"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import { Theme, useTheme } from "@material-ui/core"
 import { RightSide } from "./style"
+import SEO from "../seo"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) =>
 class Layout extends React.Component<
   { children: React.ReactNode[] | React.ReactNode },
   { drawerOpen: boolean }
-> {
+  > {
   state = {
     drawerOpen: false,
   }
@@ -63,6 +64,7 @@ class Layout extends React.Component<
           const style = useStyles(theme)
           return (
             <div className={style.root}>
+              <SEO />
               <BlogSidebar />
               <RightSide>
                 <div className={style.PageContent}>{this.props.children}</div>

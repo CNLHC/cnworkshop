@@ -3,6 +3,7 @@ import Layout from "../components/Layout/layout"
 import PostList from "../components/PostList"
 import { graphql, navigate } from 'gatsby'
 import PageArchive from "../components/archive"
+import SEO from "../components/seo"
 
 
 
@@ -13,7 +14,10 @@ const IndexPage = ({ data }) => {
 
 
   return (
-    <PageArchive data={data} />
+    <>
+      <SEO />
+      <PageArchive data={data} />
+    </>
   )
 }
 

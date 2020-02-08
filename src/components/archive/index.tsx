@@ -5,6 +5,7 @@ import useStyles from "./style"
 import PostList from "../PostList"
 import { Grid, useTheme } from "@material-ui/core"
 import { TPostListData } from '../../templates/PostList'
+import SEO from '../seo'
 
 export default function PageArchive(props: { data: TPostListData }) {
     const theme = useTheme()
@@ -12,6 +13,7 @@ export default function PageArchive(props: { data: TPostListData }) {
     const { data } = props
     return (
         <Layout>
+            <SEO />
             <Grid container spacing={3}>
                 <Grid item xl={6} sm={8} md={10} xs={12}>
                     <PostList data={data} />

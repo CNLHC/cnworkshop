@@ -3,6 +3,7 @@ module.exports = {
     title: "cnworkshop",
     description: "CN's Blog",
     author: "CNLHC",
+    lang: "zh_cn",
   },
   plugins: [
     `gatsby-plugin-material-ui`,
