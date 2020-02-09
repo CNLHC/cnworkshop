@@ -1,12 +1,12 @@
 import React from "react"
 import PostCard from "../PostCard"
-import { IQuery } from '../../templates/PostList/query'
 import { useTheme } from "@material-ui/core"
 import useStyles from "./style"
+import { PostListWithFilter } from "../../templates/PostList/__generated__/PostListWithFilter"
 
 
 export interface Props {
-  data: IQuery
+  data: PostListWithFilter
 }
 
 
@@ -14,9 +14,10 @@ const PostList = (props: Props) => {
   const { data } = props
   const theme = useTheme()
   const style = useStyles(theme)
+  console.log(data)
   return (
     <div className={style.CardContainer}>
-      {data.allMarkdownRemark.edges.map(e =>
+      {data.allMdx.edges.map(e =>
         <div
           key={`postCard-${e.node.id}`}
           className={style.CardWrapper}>

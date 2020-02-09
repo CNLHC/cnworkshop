@@ -193,9 +193,6 @@ export const query=graphql`
         node {
           id
           excerpt
-          fields{
-            slug
-          }
           fileAbsolutePath
           frontmatter {
             title

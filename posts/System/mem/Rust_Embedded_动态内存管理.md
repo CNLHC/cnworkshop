@@ -2,7 +2,7 @@
 title: "[Rust-Embedded]动态内存管理-使用alloc和alloc-cortex-m"
 codeName: rust-embedded-memory-manage-alloc-and-alloc-cortex-m
 date: 2020-01-12T19:46:00.123Z
-tags: ["system", "memory", "rust", "embedded"]
+tags: ["System", "Memory", "Rust", "Embedded"]
 ---
 
 ## 简述

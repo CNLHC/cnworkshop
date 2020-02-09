@@ -12,7 +12,7 @@ const TagView: PageCreator = async (props) => {
     const { createPage } = props.actions
     const AllTags = await graphql` 
     query AllTags {
-        allMarkdownRemark {
+        allMdx{
             group(field: frontmatter___tags) {
             fieldValue
             totalCount
@@ -20,13 +20,13 @@ const TagView: PageCreator = async (props) => {
         }
     }`
     const templatePath = getPostListTemplatePath()
-    AllTags.data.allMarkdownRemark.group.forEach(
+    AllTags.data.allMdx.group.forEach(
         async tag => {
-            const data = (await props.graphql<PostByTag>(qPostByTag)).data.allMarkdownRemark.edges
+            const data = (await props.graphql<PostByTag>(qPostByTag)).data.allMdx.edges
             getLimitOffsetByTotal(data.length).map(({ limit, offset }, idx) => {
                 if (idx == 0) {
                     createPage({
-                        path: `/tag/${tag.fieldValue}/`,
+                        path: `/tag/${tag.fieldValue.toUpperCase()}/`,
                         component: templatePath,
                         context: {
                             limit,
@@ -35,7 +35,7 @@ const TagView: PageCreator = async (props) => {
                         }
                     })
                     createPage({
-                        path: `/tag/${tag.fieldValue}/${idx + 1}`,
+                        path: `/tag/${tag.fieldValue.toUpperCase()}/${idx + 1}`,
                         component: templatePath,
                         context: {
                             limit,

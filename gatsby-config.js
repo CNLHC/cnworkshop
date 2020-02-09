@@ -16,17 +16,18 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "markdown-posts",
-        path: `${__dirname}/posts/`,
+        path: `./posts/`,
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: [`.mdx`,`.md`],
         commonmark: true,
         footnotes: true,
         pedantic: true,
         gfm: true,
-        plugins: [
+        gatsbyRemarkPlugins: [
           "gatsby-plugin-slug",
           "gatsby-remark-graphviz",
           "gatsby-remark-autolink-headers",

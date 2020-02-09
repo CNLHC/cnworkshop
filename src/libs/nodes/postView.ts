@@ -1,7 +1,7 @@
 import conf from "../../conf"
 import { PageCreator } from "./tagview"
 import { PostForDetailView } from "./__generated__/PostForDetailView"
-import { CurryingUnTagedGraphql, getPostListTemplatePath, getLimitOffsetByTotal, getPostDetailTemplatePath, getPostURLPrefix } from "./util"
+import { CurryingUnTagedGraphql, getPostListTemplatePath, getLimitOffsetByTotal, getPostDetailTemplatePath, getPostURLPrefix, getUrlFromAbsolutePath } from "./util"
 
 
 const DetailView: PageCreator = (props) => {
@@ -14,12 +14,12 @@ const DetailView: PageCreator = (props) => {
         // Query for markdown nodes to use in creating pages.
         resolve(
             graphql`query PostForDetailView{
-            allMarkdownRemark(limit: 1000) {
+            allMdx(limit: 1000) {
               edges {
                 node {
                   fileAbsolutePath
                   fields{
-                    slug
+                      slug
                   }
                   frontmatter {
                     codeName
@@ -31,7 +31,7 @@ const DetailView: PageCreator = (props) => {
                 if (result.errors)
                     reject(result.errors)
 
-                const mdData = result.data.allMarkdownRemark.edges
+                const mdData = result.data.allMdx.edges
 
                 // Create detail view for each post
                 mdData.forEach(({
@@ -39,7 +39,7 @@ const DetailView: PageCreator = (props) => {
                 }) => {
                     const codeName = node.frontmatter.codeName
                     createPage({
-                        path: node.fields.slug,
+                        path: `${node.fields.slug}`,
                         component: getPostDetailTemplatePath(),
                         context: {
                             codeName

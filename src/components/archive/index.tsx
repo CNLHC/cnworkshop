@@ -18,9 +18,9 @@ export default function PageArchive(props: { data: TPostListData }) {
                 <Grid item xl={6} sm={8} md={10} xs={12}>
                     <PostList data={data} />
                     {
-                        data.allMarkdownRemark.pageInfo ?
+                        data.allMdx.pageInfo ?
                             <div className={style.paginator}>
-                                <Paginator pageInfo={data.allMarkdownRemark.pageInfo} />
+                                <Paginator pageInfo={data.allMdx.pageInfo} />
                             </div> : null
                     }
                 </Grid>

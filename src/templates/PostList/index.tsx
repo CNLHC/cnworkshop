@@ -7,12 +7,13 @@ export type TPostListData = PostListWithFilter
 
 
 const PostPage = ({ data }: { data: PostListWithFilter }) => {
-  return (<PageArchive data={data} />);
+  return (
+  <PageArchive data={data} />);
 }
 
 export const query = graphql`
   query PostListWithFilter($offset: Int!, $limit: Int!, $tags: [String], $after: Date, $before: Date) {
-    allMarkdownRemark(
+    allMdx(
         skip: $offset,
         limit: $limit,
         sort: {order: DESC, fields: frontmatter___date}, 
@@ -26,9 +27,6 @@ export const query = graphql`
         node {
           id
           excerpt
-          fields {
-            slug
-          }
           fileAbsolutePath
           timeToRead
           frontmatter {
@@ -36,6 +34,9 @@ export const query = graphql`
             codeName
             date(formatString: "YYYY年MM月DD日HH:MM")
             tags
+          }
+          fields {
+            slug
           }
         }
       }

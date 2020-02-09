@@ -23,17 +23,17 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query IndexPostList {
-    allMarkdownRemark(
+    allMdx(
       limit:50,
       sort: {order: DESC, fields: frontmatter___date}
     ) {
       edges {
         node {
           id
-          excerpt
-          fields{
+          fields {
             slug
           }
+          excerpt
           fileAbsolutePath
           timeToRead
           frontmatter {

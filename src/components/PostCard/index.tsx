@@ -1,12 +1,10 @@
-import React, { useRef, useState } from "react"
-import { Edge } from "../../templates/PostList/query"
+import React, { useState } from "react"
 import styled from 'styled-components'
 import { navigate } from "gatsby"
-import { Card, Typography, useTheme, CardActionArea, CardActions, Button, Divider, Chip, ButtonGroup } from "@material-ui/core"
+import { Card, Typography, useTheme, CardActionArea, CardActions, Button, Divider, Chip, ButtonGroup, CardContent } from "@material-ui/core"
 import useStyles from "./style"
-import { CardContent } from "semantic-ui-react"
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
-import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import { PostListWithFilter } from "../../templates/PostList/__generated__/PostListWithFilter"
 
 
 
@@ -40,10 +38,10 @@ const FancyTitleLink = styled.div`
 `
 
 export interface Props {
-  edge: Edge
+  edge: PostListWithFilter['allMdx']['edges'][0]
 }
 
-const PostCard: React.SFC<Props> = (props) => {
+const PostCard = (props: Props) => {
   const theme = useTheme()
   const style = useStyles(theme)
   const [raise, setRaise] = useState(false)
@@ -86,7 +84,7 @@ const PostCard: React.SFC<Props> = (props) => {
             <LocalOfferIcon />
             {
               tags.map(e =>
-                <Button size="small" key={`${edge.node.id}-tag-${e}`} onClick={() => navigate(`/tag/${e}/`)}>
+                <Button size="small" key={`${edge.node.id}-tag-${e}`} onClick={() => navigate(`/tag/${e.toUpperCase()}/`)}>
                   {e}
                 </Button>
               )

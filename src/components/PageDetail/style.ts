@@ -4,16 +4,6 @@ import styled from "styled-components"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    toc: {
-      borderLeft: "1px solid #ebedf0",
-      marginLeft: "15px",
-      color: "#FFF",
-      textDecoration: "none",
-      ul: {
-        listStyle: "none",
-        lineHeight: "1",
-      },
-    },
   })
 )
 export const PageRoot = styled.div`
