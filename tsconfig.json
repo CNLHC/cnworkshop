@@ -1,17 +1,22 @@
-
 {
   "compilerOptions": {
     "module": "commonjs",
-    "noImplicitAny":false,
+    "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "jsx": "react",
-    "lib": ["es2015.promise","es2018.promise","DOM"]
+    "lib": [
+      "es2015.promise",
+      "es2018.promise",
+      "DOM"
+    ]
   },
   "include": [
-    "src/**/*", "_provider.tsx"
+    "src/**/*",
+    "_provider.tsx",
+    "posts/**/*"
   ],
   "exclude": [
     "node_modules",

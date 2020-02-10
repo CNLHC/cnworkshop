@@ -1,11 +1,13 @@
 import createMuiTheme, { ThemeOptions } from "@material-ui/core/styles/createMuiTheme";
 
-const Dark= {
+const Dark = {
     palette: {
         text: {
             primary: "rgba(255,255,255,1)",
-            secondary: "rgba(255,255,255,0.60)",
-            disabled: "rgba(255,255,255,0.40)"
+            secondary: "rgba(255, 255, 255, 0.7)",
+            disabled: "rgba(255, 255, 255, 0.5)",
+            hint: "rgba(255, 255, 255, 0.5)",
+            icon: "rgba(255, 255, 255, 0.5)",
         },
         primary: {
             50: "#fcfaff",
@@ -18,7 +20,12 @@ const Dark= {
             700: "#542c85",
             800: "#452475",
             900: "#362066",
+        },
+        background: {
+            paper: "#424242",
+            default: "#303030"
         }
+
 
 
     }

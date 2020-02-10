@@ -3,9 +3,11 @@ import Layout from "../Layout/layout"
 import { useTheme, Icon } from "@material-ui/core"
 import useStyles, { FloatingArea, FloatingRail, PageRoot } from "./style"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 
 import { PageContent } from "./style"
 import { PageDetailByCodeName } from "../../templates/PostDetail/__generated__/PageDetailByCodeName"
+
 import MdxToc from "./toc"
 
 require(`katex/dist/katex.min.css`)
@@ -15,16 +17,15 @@ const PostDetail = (props: { data: PageDetailByCodeName }) => {
   const theme = useTheme()
   const styles = useStyles(theme)
   const { data } = props
+const shortcodes = { }
   return (
     <Layout>
       <PageRoot>
-        {/* <PageContent
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        /> */}
-        <PageContent>
-
-          <MDXRenderer title="My Stuff!">{props.data.mdx.body}</MDXRenderer>
-        </PageContent>
+        <MDXProvider components={shortcodes}>
+          <PageContent>
+            <MDXRenderer title="My Stuff!">{props.data.mdx.body}</MDXRenderer>
+          </PageContent>
+        </MDXProvider>
 
         <FloatingRail>
           <FloatingArea>

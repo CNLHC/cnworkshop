@@ -1,0 +1,796 @@
+[
+    {
+        "ccfCategory": "计算机科学理论",
+        "confAbbrev": "SODA",
+        "confName": "ACM-SIAM Symposium on Discrete Algorithms",
+        "hoster": "SIAM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/soda/",
+        "range": [
+            "2020-01-04T16:00:00.000Z",
+            "2020-01-07T16:00:00.000Z"
+        ],
+        "location": "SaltLake City, UT, USA",
+        "ddl": "2019-07-04T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机科学理论",
+        "confAbbrev": "CAV",
+        "confName": "Computer Aided Verification",
+        "hoster": "Springer",
+        "dblp": "http://dblp.uni-trier.de/db/conf/cav/",
+        "range": [
+            "2020-06-20T16:00:00.000Z",
+            "2020-06-23T16:00:00.000Z"
+        ],
+        "location": "LosAngeles, USA",
+        "ddl": "2020-01-22T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "ASE",
+        "confName": "International Conference on Automated Software Engineering",
+        "hoster": "IEEE/ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/kbse/",
+        "range": [
+            "2020-09-20T16:00:00.000Z",
+            "2020-09-24T16:00:00.000Z"
+        ],
+        "location": "Melbourne,Australia",
+        "ddl": "2020-04-16T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机网络",
+        "confAbbrev": "MobiCom",
+        "confName": "ACM International Conference on Mobile Computing and Networking",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/mobicom/",
+        "range": [
+            "2020-09-20T16:00:00.000Z",
+            "2020-09-24T16:00:00.000Z"
+        ],
+        "location": "London,United Kingdom",
+        "ddl": "2020-03-10T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "ISCA",
+        "confName": "International Symposium on Computer Architecture",
+        "hoster": "ACM /IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/isca/",
+        "range": [
+            "2020-05-29T16:00:00.000Z",
+            "2020-06-02T16:00:00.000Z"
+        ],
+        "location": "Valencia,Spain",
+        "ddl": "2019-11-25T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "数据库/数据挖掘/内容检索",
+        "confAbbrev": "SIGKDD",
+        "confName": "ACM Knowledge Discovery and Data Mining",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/kdd/",
+        "range": [
+            "2020-08-21T16:00:00.000Z",
+            "2020-08-26T16:00:00.000Z"
+        ],
+        "location": "San Diego, California - USA",
+        "ddl": "2020-02-12T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "PPoPP",
+        "confName": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/ppopp/",
+        "range": [
+            "2020-02-21T16:00:00.000Z",
+            "2020-02-25T16:00:00.000Z"
+        ],
+        "location": "SanDiego, California, USA",
+        "ddl": "2019-08-05T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "数据库/数据挖掘/内容检索",
+        "confAbbrev": "ICDE",
+        "confName": "IEEE International Conference on Data Engineering",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/icde/",
+        "range": [
+            "2020-04-19T16:00:00.000Z",
+            "2020-04-23T16:00:00.000Z"
+        ],
+        "location": "Dallas,Texas, USA",
+        "ddl": "2019-06-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "数据库/数据挖掘/内容检索",
+        "confAbbrev": "SIGIR",
+        "confName": "International Conference on Research on Development in Information Retrieval",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sigir/",
+        "range": [
+            "2020-07-24T16:00:00.000Z",
+            "2020-07-29T16:00:00.000Z"
+        ],
+        "location": "Xian,China",
+        "ddl": "2020-01-21T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "USENIX ATC",
+        "confName": "USENIX Annul Technical Conference",
+        "hoster": "USENIX",
+        "dblp": "http://dblp.uni-trier.de/db/conf/usenix/index.html",
+        "range": [
+            "2020-07-14T16:00:00.000Z",
+            "2020-07-16T16:00:00.000Z"
+        ],
+        "location": "BOSTON,MA, USA",
+        "ddl": "2020-01-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "网络与信息安全",
+        "confAbbrev": "EUROCRYPT",
+        "confName": "European Cryptology Conference",
+        "hoster": "Springer",
+        "dblp": "http://dblp.uni-trier.de/db/conf/eurocrypt/",
+        "range": [
+            "2020-05-09T16:00:00.000Z",
+            "2020-05-13T16:00:00.000Z"
+        ],
+        "location": "Zagreb, Croatia",
+        "ddl": "2019-09-25T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机网络",
+        "confAbbrev": "NSDI",
+        "confName": "Symposium on Network System Design and Implementation",
+        "hoster": "USENIX",
+        "dblp": "http://dblp.uni-trier.de/db/conf/nsdi/",
+        "range": [
+            "2020-02-24T16:00:00.000Z",
+            "2020-02-26T16:00:00.000Z"
+        ],
+        "location": "SantaClara, CA, USA",
+        "ddl": "2019-09-18T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机网络",
+        "confAbbrev": "INFOCOM",
+        "confName": "IEEE International Conference on Computer Communications",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/infocom/",
+        "range": [
+            "2020-04-26T16:00:00.000Z",
+            "2020-04-29T16:00:00.000Z"
+        ],
+        "location": "Beijing,China",
+        "ddl": "2019-07-30T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机科学理论",
+        "confAbbrev": "LICS",
+        "confName": "IEEE Symposium on Logic in Computer Science",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/lics/",
+        "range": [
+            "2020-07-07T16:00:00.000Z",
+            "2020-07-11T16:00:00.000Z"
+        ],
+        "location": "Beijing,China",
+        "ddl": "2020-01-09T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "网络与信息安全",
+        "confAbbrev": "CRYPTO",
+        "confName": "International Cryptology Conference",
+        "hoster": "Springer",
+        "dblp": "http://dblp.uni-trier.de/db/conf/crypto/",
+        "range": [
+            "2020-03-29T16:00:00.000Z",
+            "2020-04-02T16:00:00.000Z"
+        ],
+        "location": "Brno,Czech Republic",
+        "ddl": "2019-09-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "NeurIPS",
+        "confName": "Annual Conference on Neural Information Processing Systems",
+        "hoster": "MIT Press",
+        "dblp": "http://dblp.uni-trier.de/db/conf/nips/",
+        "range": [
+            "2020-12-05T16:00:00.000Z",
+            "2020-12-11T16:00:00.000Z"
+        ],
+        "location": "Vancouver Convention Center",
+        "ddl": null,
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "OOPSLA",
+        "confName": "Conference on Object-Oriented Programming Systems, Languages,and Applications",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/oopsla/",
+        "range": [
+            "2020-09-14T16:00:00.000Z",
+            "2020-09-19T16:00:00.000Z"
+        ],
+        "location": "Chicago",
+        "ddl": "2020-04-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机科学理论",
+        "confAbbrev": "FOCS",
+        "confName": "IEEE Annual Symposium on Foundations of Computer Science",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/focs/",
+        "range": [
+            "2020-11-15T16:00:00.000Z",
+            "2020-11-18T16:00:00.000Z"
+        ],
+        "location": "Durham, North Carolina",
+        "ddl": "2020-04-08T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人机交互与普适计算",
+        "confAbbrev": "UbiComp",
+        "confName": "ACM International Conference on Ubiquitous Computing",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/huc/",
+        "range": [
+            "2020-06-21T16:00:00.000Z",
+            "2020-06-24T16:00:00.000Z"
+        ],
+        "location": "Madrid",
+        "ddl": "2020-01-19T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "SOSP",
+        "confName": "ACM Symposium on Operating Systems Principles",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sosp/",
+        "range": [
+            null
+        ],
+        "location": "Koblenz, Germany",
+        "ddl": null,
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "ISSTA",
+        "confName": "International Symposium on Software Testing and Analysis",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/issta/",
+        "range": [
+            "2020-07-17T16:00:00.000Z",
+            "2020-07-21T16:00:00.000Z"
+        ],
+        "location": "LosAngeles, US",
+        "ddl": "2020-01-26T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "网络与信息安全",
+        "confAbbrev": "S&P",
+        "confName": "IEEE Symposium on Security and Privacy",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sp/",
+        "range": [
+            "2020-06-15T16:00:00.000Z",
+            "2020-06-17T16:00:00.000Z"
+        ],
+        "location": "Genova,Italy",
+        "ddl": "2019-11-19T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "POPL",
+        "confName": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/popl/",
+        "range": [
+            "2020-01-18T16:00:00.000Z",
+            "2020-01-24T16:00:00.000Z"
+        ],
+        "location": "NewOrleans, Louisiana, USA",
+        "ddl": "2019-07-09T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机科学理论",
+        "confAbbrev": "STOC",
+        "confName": "ACM Symposium on Theory of Computing",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/stoc/",
+        "range": [
+            "2020-06-21T16:00:00.000Z",
+            "2020-06-25T16:00:00.000Z"
+        ],
+        "location": "Chicago,IL, USA",
+        "ddl": "2019-11-03T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "HPCA",
+        "confName": "High-Performance Computer Architecture",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/cnhpca/",
+        "range": [
+            "2020-02-21T16:00:00.000Z",
+            "2020-02-25T16:00:00.000Z"
+        ],
+        "location": "SanDiego, California, USA",
+        "ddl": "2019-08-05T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "PLDI",
+        "confName": "ACM SIGPLAN Symposium on Programming Language Design & Implementation",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/pldi/",
+        "range": [
+            "2020-06-14T16:00:00.000Z",
+            "2020-06-19T16:00:00.000Z"
+        ],
+        "location": "London,United Kingdom",
+        "ddl": "2019-11-21T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "FAST",
+        "confName": "Conference on File and Storage Technologies",
+        "hoster": "USENIX",
+        "dblp": "http://dblp.uni-trier.de/db/conf/fast/",
+        "range": [
+            "2020-02-23T16:00:00.000Z",
+            "2020-02-26T16:00:00.000Z"
+        ],
+        "location": "SANTACLARA, CA, USA",
+        "ddl": "2019-09-25T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "交叉/综合/新兴",
+        "confAbbrev": "RTSS",
+        "confName": "Real-Time Systems Symposium",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/rtss/",
+        "range": [
+            "2020-12-01T16:00:00.000Z",
+            "2020-12-03T16:00:00.000Z"
+        ],
+        "location": "Houston,Texas,USA",
+        "ddl": "2020-05-27T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机网络",
+        "confAbbrev": "SIGCOMM",
+        "confName": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sigcomm/index.html",
+        "range": [
+            "2020-08-09T16:00:00.000Z",
+            "2020-08-13T16:00:00.000Z"
+        ],
+        "location": "NewYork City",
+        "ddl": "2020-02-06T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "ASPLOS",
+        "confName": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/asplos/",
+        "range": [
+            "2020-03-15T16:00:00.000Z",
+            "2020-03-19T16:00:00.000Z"
+        ],
+        "location": "Lausanne,Switzerland",
+        "ddl": "2019-08-15T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "SC",
+        "confName": "International Conference for High Performance Computing, Networking, Storage, and Analysis",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sc/",
+        "range": [
+            "2020-11-14T16:00:00.000Z",
+            "2020-11-19T16:00:00.000Z"
+        ],
+        "location": "Atlanta,Georgia, USA",
+        "ddl": "2020-04-07T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "数据库/数据挖掘/内容检索",
+        "confAbbrev": "SIGMOD",
+        "confName": "ACM Conference on Management of Data",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sigmod/",
+        "range": [
+            "2020-06-13T16:00:00.000Z",
+            "2020-06-18T16:00:00.000Z"
+        ],
+        "location": "Portland,Oregon, US",
+        "ddl": "2019-07-15T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "数据库/数据挖掘/内容检索",
+        "confAbbrev": "VLDB",
+        "confName": "International Conference on Very Large Data Bases",
+        "hoster": "Morgan Kaufmann",
+        "dblp": "http://dblp.uni-trier.de/db/conf/vldb/",
+        "range": [
+            "2020-08-30T16:00:00.000Z",
+            "2020-09-03T16:00:00.000Z"
+        ],
+        "location": "Tokyo,Japan",
+        "ddl": null,
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "DAC",
+        "confName": "Design Automation Conference",
+        "hoster": "ACM",
+        "dblp": "https://dblp.uni-trier.de/db/conf/dac/",
+        "range": [
+            "2020-06-18T16:00:00.000Z",
+            "2020-06-22T16:00:00.000Z"
+        ],
+        "location": "SanFrancisco, CA",
+        "ddl": "2019-11-26T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "OSDI",
+        "confName": "USENIX Symposium on Operating Systems Design and Implementations",
+        "hoster": "USENIX",
+        "dblp": "http://dblp.uni-trier.de/db/conf/osdi/",
+        "range": [
+            "2020-11-03T16:00:00.000Z",
+            "2020-11-05T16:00:00.000Z"
+        ],
+        "location": "Banff,Alberta, Canada",
+        "ddl": "2020-05-11T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "FSE/ESEC",
+        "confName": "ACM SIGSOFT Symposium on the Foundation of Software Engineering/ European Software Engineering Conference",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/sigsoft/",
+        "range": [
+            "2020-11-07T16:00:00.000Z",
+            "2020-11-12T16:00:00.000Z"
+        ],
+        "location": "Sacramento,California, United States",
+        "ddl": "2020-03-04T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机体系结构/并行与分布计算/存储系统",
+        "confAbbrev": "MICRO",
+        "confName": "IEEE/ACM International Symposium on Microarchitecture",
+        "hoster": "IEEE/ACM",
+        "dblp": "http://dblp.uni-trier.de/db/journals/micro/",
+        "range": [
+            "2020-06-06T16:00:00.000Z",
+            "2020-06-09T16:00:00.000Z"
+        ],
+        "location": "HamametTunisia",
+        "ddl": "2020-02-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机图形学与多媒体",
+        "confAbbrev": "SIGGRAPH",
+        "confName": "ACM SIGGRAPH Annual Conference",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/siggraph/index.html",
+        "range": [
+            "2020-06-23T16:00:00.000Z",
+            "2020-06-25T16:00:00.000Z"
+        ],
+        "location": "Seoul,KR",
+        "ddl": "2020-02-21T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "网络与信息安全",
+        "confAbbrev": "CCS",
+        "confName": "ACM Conference on Computer and Communications Security",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/ccs/",
+        "range": [
+            "2020-11-08T16:00:00.000Z",
+            "2020-11-12T16:00:00.000Z"
+        ],
+        "location": "Orlando, USA",
+        "ddl": "2020-01-19T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人机交互与普适计算",
+        "confAbbrev": "CSCW",
+        "confName": "ACM Conference on Computer Supported Cooperative Work and Social Computing",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/cscw",
+        "range": [
+            "2020-11-06T16:00:00.000Z",
+            "2020-11-12T16:00:00.000Z"
+        ],
+        "location": "TBD",
+        "ddl": "2019-10-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "软件工程/系统软件/程序设计语言",
+        "confAbbrev": "ICSE",
+        "confName": "International Conference on Software Engineering",
+        "hoster": "ACM/IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/icse/",
+        "range": [
+            "2020-05-22T16:00:00.000Z",
+            "2020-05-28T16:00:00.000Z"
+        ],
+        "location": "Seoul,South Korea",
+        "ddl": "2019-08-22T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "ICCV",
+        "confName": "International Conference on Computer Vision",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/iccv/",
+        "range": [
+            "2020-06-21T16:00:00.000Z",
+            "2020-06-22T16:00:00.000Z"
+        ],
+        "location": "Venice, Italy",
+        "ddl": "2020-02-12T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "交叉/综合/新兴",
+        "confAbbrev": "WWW",
+        "confName": "International World Wide Web Conferences",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/www/",
+        "range": [
+            "2020-04-19T16:00:00.000Z",
+            "2020-04-24T16:00:00.000Z"
+        ],
+        "location": "Taipei,Taiwan",
+        "ddl": "2019-10-13T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "CVPR",
+        "confName": "IEEE Conference on Computer Vision and Pattern Recognition",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/cvpr/",
+        "range": [
+            "2020-06-15T16:00:00.000Z",
+            "2020-06-19T16:00:00.000Z"
+        ],
+        "location": "Seattle,WA",
+        "ddl": "2019-11-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "ACL",
+        "confName": "Annual Meeting of the Association for Computational Linguistics",
+        "hoster": "ACL",
+        "dblp": "http://dblp.uni-trier.de/db/conf/acl/",
+        "range": [
+            "2020-07-04T16:00:00.000Z",
+            "2020-07-09T16:00:00.000Z"
+        ],
+        "location": "Seattle,WA",
+        "ddl": "2019-12-08T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "AAAI",
+        "confName": "AAAI Conference on Artificial Intelligence",
+        "hoster": "AAAI",
+        "dblp": "http://dblp.uni-trier.de/db/conf/aaai/",
+        "range": [
+            "2020-02-06T16:00:00.000Z",
+            "2020-02-11T16:00:00.000Z"
+        ],
+        "location": "HiltonNew York Midtown, New York, USA",
+        "ddl": "2019-09-04T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "IJCAI",
+        "confName": "International Joint Conference on Artificial Intelligence",
+        "hoster": "Morgan Kaufmann",
+        "dblp": "http://dblp.uni-trier.de/db/conf/ijcai/",
+        "range": [
+            "2020-07-10T16:00:00.000Z",
+            "2020-07-16T16:00:00.000Z"
+        ],
+        "location": "Yokohama,Japan",
+        "ddl": "2020-01-20T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人工智能",
+        "confAbbrev": "ICML",
+        "confName": "International Conference on Machine Learning",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/icml/",
+        "range": [
+            "2020-07-11T16:00:00.000Z",
+            "2020-07-17T16:00:00.000Z"
+        ],
+        "location": "Vienna,AUSTRIA",
+        "ddl": "2020-02-05T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机图形学与多媒体",
+        "confAbbrev": "VR",
+        "confName": "IEEE Virtual Reality",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/vr/",
+        "range": [
+            "2020-03-21T16:00:00.000Z",
+            "2020-03-25T16:00:00.000Z"
+        ],
+        "location": "Atlanta,USA",
+        "ddl": "2019-09-09T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "人机交互与普适计算",
+        "confAbbrev": "CHI",
+        "confName": "ACM Conference on Human Factors in Computing Systems",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/chi",
+        "range": [
+            "2020-04-24T16:00:00.000Z",
+            "2020-04-29T16:00:00.000Z"
+        ],
+        "location": "Honolulu,Hawaiʻi, USA",
+        "ddl": "2019-09-19T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机图形学与多媒体",
+        "confAbbrev": "ACM MM",
+        "confName": "ACM International Conference on Multimedia",
+        "hoster": "ACM",
+        "dblp": "http://dblp.uni-trier.de/db/conf/mm/",
+        "range": [
+            "2020-10-11T16:00:00.000Z",
+            "2020-10-15T16:00:00.000Z"
+        ],
+        "location": "Seattle,USA",
+        "ddl": "2020-03-27T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "网络与信息安全",
+        "confAbbrev": "USENIX Security",
+        "confName": "Usenix Security Symposium",
+        "hoster": "USENIX Association",
+        "dblp": "http://dblp.uni-trier.de/db/conf/uss/",
+        "range": [
+            "2020-08-11T16:00:00.000Z",
+            "2020-08-13T16:00:00.000Z"
+        ],
+        "location": "Boston,MA",
+        "ddl": "2019-05-14T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    },
+    {
+        "ccfCategory": "计算机图形学与多媒体",
+        "confAbbrev": "IEEE VIS",
+        "confName": "IEEE Visualization Conference",
+        "hoster": "IEEE",
+        "dblp": "http://dblp.uni-trier.de/db/conf/visualization/index.html",
+        "range": [
+            "2020-11-16T16:00:00.000Z",
+            "2020-11-19T16:00:00.000Z"
+        ],
+        "location": "Sorrento,Italy",
+        "ddl": "2020-06-01T16:00:00.000Z",
+        "type": "conference",
+        "level": "a"
+    }
+]]

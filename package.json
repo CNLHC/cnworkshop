@@ -11,6 +11,7 @@
     "@material-ui/styles": "^4.5.0",
     "@mdx-js/mdx": "^1.5.5",
     "@mdx-js/react": "^1.5.5",
+    "@types/lodash": "^4.14.149",
     "ali-oss": "^6.5.1",
     "commander": "^4.1.0",
     "dotenv": "^8.2.0",
@@ -44,6 +45,7 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.2.0",
     "glob": "^7.1.6",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "pinyin": "^2.9.0",
     "pinyinjs": "^2.2.1",
@@ -53,6 +55,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.0",
     "react-spring": "^8.0.27",
+    "react-vertical-timeline-component": "^2.5.0",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
