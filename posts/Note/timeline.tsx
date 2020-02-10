@@ -43,6 +43,7 @@ export default function Timeline(props: { data: entry[] }) {
                             date={moment(e.ddl).locale('zh-cn').format('MMMM DD日')}
                             iconStyle={{ background: theme.palette.primary[600], color: '#fff' }}
                             key={e.dblp}
+                            id={e.confAbbrev}
                         >
                             <h3 className="vertical-timeline-element-title">{e.confAbbrev}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{e.location}</h4>
