@@ -45,7 +45,7 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.2.0",
     "glob": "^7.1.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "pinyin": "^2.9.0",
     "pinyinjs": "^2.2.1",
