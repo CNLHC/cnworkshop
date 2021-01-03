@@ -22,13 +22,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
-        extensions: [`.mdx`,`.md`],
+        extensions: [`.mdx`, `.md`],
         commonmark: true,
         footnotes: true,
         pedantic: true,
         gfm: true,
         gatsbyRemarkPlugins: [
-          "gatsby-plugin-slug",
           "gatsby-remark-graphviz",
           "gatsby-remark-autolink-headers",
           {
@@ -68,25 +67,9 @@ module.exports = {
         path: "assets",
       },
     },
-
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-plugin-codegen",
-      options: {
-        includes:[
-          "./src/**/*.tsx",
-          "./src/**/*.ts",
-          "./libs/**/*.ts",
-          "./node_modules/gatsby-source-contentful/src/*.js",
-          "./node_modules/gatsby-transformer-sharp/src/*.js",
-          "./node_modules/gatsby-image/src/*.js"
-
-
-        ]
-
-      }
-    },
+    `gatsby-plugin-typegen`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // "gatsby-plugin-offline",

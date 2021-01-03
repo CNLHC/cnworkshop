@@ -4,10 +4,6 @@ import { navigate } from "gatsby"
 import { Card, Typography, useTheme, CardActionArea, CardActions, Button, Divider, Chip, ButtonGroup, CardContent } from "@material-ui/core"
 import useStyles from "./style"
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
-import { PostListWithFilter } from "../../templates/PostList/__generated__/PostListWithFilter"
-
-
-
 
 
 
@@ -38,7 +34,7 @@ const FancyTitleLink = styled.div`
 `
 
 export interface Props {
-  edge: PostListWithFilter['allMdx']['edges'][0]
+  edge: GatsbyTypes.PostListWithFilterQuery['allMdx']['edges'][0]
 }
 
 const PostCard = (props: Props) => {
@@ -48,7 +44,7 @@ const PostCard = (props: Props) => {
   const edge = props.edge
   const frontmatter = edge.node.frontmatter
   const tags = !frontmatter.tags ? ['无标签'] : frontmatter.tags
-  const url = edge.node.fields.slug
+  const url = edge.node.slug
 
   return (
     <>
@@ -59,7 +55,7 @@ const PostCard = (props: Props) => {
         onMouseLeave={() => setRaise(false)}
       >
         <CardActionArea onClick={
-          () => navigate(url)
+          () => navigate(`/${url}`)
         } >
           <CardContent className={style.CardContent}>
             <Typography gutterBottom variant="h5" component="h2" style={{

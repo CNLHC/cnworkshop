@@ -4,10 +4,9 @@ import Paginator from '../Paginator/index'
 import useStyles from "./style"
 import PostList from "../PostList"
 import { Grid, useTheme } from "@material-ui/core"
-import { TPostListData } from '../../templates/PostList'
 import SEO from '../seo'
 
-export default function PageArchive(props: { data: TPostListData }) {
+export default function PageArchive(props: { data: GatsbyTypes.PostListWithFilterQuery }) {
     const theme = useTheme()
     const style = useStyles(theme)
     const { data } = props

@@ -9,10 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import { SiteMeta } from "./__generated__/SiteMeta"
 
 function SEO() {
-  const { site } = useStaticQuery<SiteMeta>(
+  const { site } = useStaticQuery<GatsbyTypes.SiteMetQuery>(
     graphql`
       query SiteMeta{
         site {

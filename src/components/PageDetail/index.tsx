@@ -6,18 +6,17 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 
 import { PageContent } from "./style"
-import { PageDetailByCodeName } from "../../templates/PostDetail/__generated__/PageDetailByCodeName"
 
 import MdxToc from "./toc"
 
 require(`katex/dist/katex.min.css`)
 require("prismjs/themes/prism-tomorrow.css")
 
-const PostDetail = (props: { data: PageDetailByCodeName }) => {
+const PostDetail = (props: { data }) => {
   const theme = useTheme()
   const styles = useStyles(theme)
   const { data } = props
-const shortcodes = { }
+  const shortcodes = {}
   return (
     <Layout>
       <PageRoot>

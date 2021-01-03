@@ -49,7 +49,7 @@ class Layout extends React.Component<
 
   render() {
     return (
-      <StaticQuery
+      <StaticQuery<GatsbyTypes.SiteTitleQueryQuery>
         query={graphql`
           query SiteTitleQuery {
             site {

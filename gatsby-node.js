@@ -1,5 +1,5 @@
 require('source-map-support').install()
-require('ts-node').register({ })
+require('ts-node').register({})
 
 exports.createPages = (args) => {
   const InstallNodes = [

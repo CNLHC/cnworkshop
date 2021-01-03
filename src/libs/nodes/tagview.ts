@@ -1,14 +1,12 @@
 import { CreatePagesArgs } from 'gatsby'
 import { CurryingUnTagedGraphql, getPostListTemplatePath, getLimitOffsetByTotal } from './util'
-import { AllTags } from './__generated__/AllTags'
 import { qPostByTag } from './query'
-import { PostByTag } from './__generated__/PostByTag'
 
 export type PageCreator = (data: CreatePagesArgs) => Promise<void>
 
 
 const TagView: PageCreator = async (props) => {
-    const graphql = CurryingUnTagedGraphql<AllTags>(props)
+    const graphql = CurryingUnTagedGraphql<any>(props)
     const { createPage } = props.actions
     const AllTags = await graphql` 
     query AllTags {
@@ -22,7 +20,7 @@ const TagView: PageCreator = async (props) => {
     const templatePath = getPostListTemplatePath()
     AllTags.data.allMdx.group.forEach(
         async tag => {
-            const data = (await props.graphql<PostByTag>(qPostByTag)).data.allMdx.edges
+            const data = (await props.graphql<any>(qPostByTag)).data.allMdx.edges
             getLimitOffsetByTotal(data.length).map(({ limit, offset }, idx) => {
                 if (idx == 0) {
                     createPage({

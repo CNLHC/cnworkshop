@@ -1,14 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PageArchive from "../../components/archive";
-import { PostListWithFilter } from "./__generated__/PostListWithFilter";
 
-export type TPostListData = PostListWithFilter
+// export type TPostListData = PostListWithFilter
 
 
-const PostPage = ({ data }: { data: PostListWithFilter }) => {
+const PostPage = ({ data }: { data }) => {
   return (
-  <PageArchive data={data} />);
+    <PageArchive data={data} />);
 }
 
 export const query = graphql`
@@ -25,6 +24,7 @@ export const query = graphql`
         }){
       edges {
         node {
+          slug
           id
           excerpt
           fileAbsolutePath
@@ -34,9 +34,6 @@ export const query = graphql`
             codeName
             date(formatString: "YYYY年MM月DD日HH:MM")
             tags
-          }
-          fields {
-            slug
           }
         }
       }

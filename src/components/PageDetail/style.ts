@@ -47,7 +47,7 @@ export const FloatingArea = styled.div`
   top: 2rem;
   a {
     text-decoration: none;
-    color: ${props => props.theme.palette.text.primary};
+  color: ${props => props.theme.palette.text.primary};
   }
 `
 export default useStyles

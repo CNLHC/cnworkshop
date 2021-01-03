@@ -1,18 +1,9 @@
 import React, { useLayoutEffect } from "react"
-import Layout from "../components/Layout/layout"
-import PostList from "../components/PostList"
 import { graphql, navigate } from 'gatsby'
 import PageArchive from "../components/archive"
 import SEO from "../components/seo"
 
-
-
 const IndexPage = ({ data }) => {
-  // useLayoutEffect(() => {
-  //   navigate("/all")
-  // }, [])
-
-
   return (
     <>
       <SEO />
@@ -30,9 +21,7 @@ export const query = graphql`
       edges {
         node {
           id
-          fields {
-            slug
-          }
+          slug
           excerpt
           fileAbsolutePath
           timeToRead
