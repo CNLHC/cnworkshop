@@ -23,7 +23,7 @@
     "gatsby-image": "^2.0.41",
     "glob": "^7.1.6",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "pinyin": "^2.9.0",
     "pinyinjs": "^2.2.1",
     "prismjs": "^1.16.0",
